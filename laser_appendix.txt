@@ -1,0 +1,870 @@
+Computer Control
+103
+5. Go to the terminal program main window and activate the connection by 
+pressing the Call button.  
+6. Switch the CUBE laser ON. If a prope r connection is established, it will 
+automatically reply to the terminal program with the information shown here.  
+7. Commands described in other sections of this manual can be used to 
+communicate with the laser. In the following example, a few query commands 
+are used to check the power level, wavelength, and the serial number of the 
+laser.  
+CUBE Laser System Operator’s Manual
+104
+7.5 Faults
+Faults display on the Status bar. Specific information displays when a 
+temperature fault—including Base Plate and Diode Temperature—is present. 
+Other faults display with a Fault indicator. To obtain details for other faults, use 
+the Terminal screen and enter ?F. 
+For steps to resolve issues, go to the section about “Troubleshooting” (p. 107).
+7.5.1 Fault Codes
+Table 7-4 lists the fault codes that may be displayed.  
+Table 7-4.  Fault Codes
+?F/?FF
+DESCRIPTION/?FL CAUSE POSSIBLE SOLUTIONERROR
+VALUE
+0 System OK
+1 Bad Command Syntax error associated with the 
+command
+Review and correct the command 
+syntax
+2 Bad Data Entered data is out of range or there 
+is a syntax error associated with the 
+data
+Review the range of entered data or 
+correct the syntax
+4 EEPROM Checksum 
+Error
+Error associated with the system 
+EEPROM
+Reboot the laser system—contact 
+Coherent Technical Support if the 
+problem persists
+8 Base Plate Temperature Base plate temperature is greater 
+than 50ºC
+Improve Heat Sink to reduce the base 
+plate temperature.
+16 Laser Diode 
+Temperature
+Difference between the diode set 
+temperature and the measured 
+diode temperature is greater than 
+5ºC
+Improve Heat Sink to reduce the 
+diode temperature
+32 Interlock Fault Interlock is open Close the Interlock connection
+64 I2C Error Processor-to-hardware 
+communication error
+Reboot the laser system—contact 
+Coherent Technical Support if the 
+problem persists
+128 Value out of Range Command entered correctly with a 
+value that is excessive or deficient 
+for the command
+Review the range of entered data and 
+correct, as necessary
+256 nc
+512 nc
+1024 Flash Reset Internal error caused a reset 
+condition for all present settings
+Enter the desired values for all 
+system parameters
+2048 Over Current Laser current exceeded 120% of the 
+new system current—result of diode 
+degradation over time
+Contact Coherent Technical SupportComputer Control
+105
+7.6 CUBE OEM Tools (Active X Controls)
+To aid in the development of an OEM application, Coherent provides a custom 
+ActiveX control. This ActiveX control interfaces with any CUBE laser. 
+This control provides a development environment with a set of tools. These tools 
+enable the programmer to quickly and efficiently communicate with the CUBE 
+laser. 
+TABLEXREF lists the CUBE OEM Tools ActiveX controls for the following 
+methods, properties, and events:  
+Refer to the installation location for the Coherent CUBE Connection software for 
+detailed information about these items.
+• The default location is C:\Program  Files\Coherent\Coherent Connection. 
+• Open the file “ CUBEOCX.hlp”.
+4096 Reset Clock Internal error caused system clock 
+reset
+8192 System Time Out Command is not acknowledged by 
+the processor
+Contact Coherent Technical Support 
+if the problem persists
+16384 Buffer Overflow Excessive number of commands is 
+issued—typical command response 
+time is 250 msec.
+Space commands by 250 msec
+32768 Fatal Error Processor error Reboot the laser system—contact 
+Coherent Technical Support if the 
+problem persists
+Table 7-4.  Fault Codes (continued)
+?F/?FF
+DESCRIPTION/?FL CAUSE POSSIBLE SOLUTIONERROR
+VALUE
+Table 7-5.  Active X Controls
+CONTROL CUBE INTERFACE
+Methods CUBEStart
+CUBESendData
+Properties CUBEAdded
+CUBERemoved
+CUBECount
+Events CUBEDeviceFound
+CUBEDeviceRemoved
+Command Set CommandSetCUBE Laser System Operator’s Manual
+106107
+8T ROUBLESHOOTING
+This section describes steps to take if there are issues with laser operation.
+NOTICE!
+Take appropriate ESD precautions when handling and installing a laser. 
+Refer to “Electrical Safety” (p. 18) for a description of ESD precautions.
+If you experience problems with the CUBE laser system, see the procedures on 
+the following pages. If you are not successful in solving the problem or need 
+further assistance, either contact Coherent Technical Support (in the US: 
+1.800.367.7890), or a worldwide local Coherent service representative (see 
+www.Coherent.com
+ for worldwide contacts).
+Table 8-1 lists possible issues and a link to the associated checklist.  
+8.1 Checklist 1: No USB Communication
+[   ] Verify Operating System is 32-bit, Win 7 or Win XP. If not, the USB 
+connection to a Host Computer Cannot be used. 
+[   ] Verify RS-232 connection is made to a recommended RS-232 to USB 
+Adapter prior to connecting USB cable end of adapter to Host Computer. 
+[   ] Confirm RS-2322 settings (baud rate, etc.) are set properly. See RS-232 
+control section.
+[   ] Contact Coherent Technical Support.
+Table 8-1.  Troubleshooting Procedures
+ISSUE SEE…
+No USB Communication Checklist 1 (p. 107)
+Interlock Fault Checklist 2 (p. 108)
+No Laser Emission at Start-up Checklist 3 (p. 108)
+System Shuts Down (RS-232 Control) Checklist 4a (p. 109)
+System Shuts Down (Analog Control and Manual Mode) Checklist 4b (p. 109)
+Low Power (RS-232 Control) Checklist 5a (p. 110)
+Low Power (Manual Mode) Checklist 5b (p. 110)
+Excessive Scattered Light (All Operating Modes) Checklist 6 (p. 111)
+Output Power Not Stable (All Operating Modes) Checklist 7 (p. 111)
+Beam Noise Out of Spec (All Operating Modes) Checklist 8 (p. 111)
+No RS-232 Communication Checklist 9 (p. 112)
+Transverse Mode is Not TEMoo Checklist 10 (p. 112)
+Base Plate Over Temperature Checklist 11 (p. 112)CUBE Laser System Operator’s Manual
+108
+8.2 Checklist 2: Interlock Fault
+If an interlock fault is suspected, execute the following steps.
+[   ] Cycle DC power OFF/ON.
+[   ] Verify the supply voltage is between 4.8 and 6.5 VDC.
+[   ] Connect a computer and send the “?LCK” or “?INT” query. If a value of 0 
+is returned, check all interlock connections.
+[   ] If the interlock connections are verified to be closed and the “?INT” or 
+“?LCK” query return a 0 (Open) condition, contact Coherent Technical 
+Support.
+8.3 Checklist 3: No Laser Emission 
+at Start-up
+Laser emission should be present within 5 minutes of start-up.
+[   ] Cycle DC power OFF/ON.
+[   ] Verify that the shutte r is in the OPEN position.
+[   ] Ensure the DE-15 connector is properly secured with locking screws.
+[   ] Verify the supply voltage is between 4.8 and 6.5 VDC.
+[   ] Use a computer to send “?LCK” or “?INT”. If the response is 0, check all 
+interlock connections.
+[   ] Send the L=1 command. If laser emission is not detected, contact 
+Coherent Technical Support.
+[   ] Check for proper heat sinking of  the laser head. Use the “?BT” query to 
+ensure the base plate temperature is less than 50°C.
+[   ] Issue the “?F” command
+[   ] If fault #8 or #16 is returned, ensure the ambient temperature is less than 
+40°C and the base plate temperature is less than 50°C.
+[   ] If fault #4 is returned, contact Coherent Technical Support for information 
+on restoring factory calibration settings.
+[   ] If fault #32 is returned, veri fy all system interlocks are closed.
+[   ] If fault #64 or #32768 is returned, the system has experienced a serious 
+problem. Contact Coherent Technical Support.Troubleshooting
+109
+8.4 Checklist 4a: System Shuts Down
+(RS-232 Control)
+[   ] Check for proper heat sinking of  the laser head—refer to “Checklist 11: 
+Base Plate Over Temperature” (p. 112).
+[   ] Check for proper grounding of the laser head (the laser head cover must 
+be at earth ground).
+[   ] Issue the “?F” command
+[   ] If fault #8 or #16 is returned, ensure the ambient temperature is less than 
+40°C and the base plate temperature is less than 50°C.
+[   ] If fault #4 is returned, contact Coherent Technical Support for information 
+on restoring factory calibration settings.
+[   ] If fault #32 is returned, veri fy all system interlocks are closed.
+[   ] If fault #64 or #32768 is returned, the system has experienced a serious 
+problem. Contact Coherent Technical Support.
+8.5 Checklist 4b: System Shuts Down
+(Analog Control and Manual Mode)
+[   ] Check for proper grounding of the laser head (the head cover must be at 
+earth ground potential).
+[   ] Verify the power supply is providing a voltage between 4.8  and 6.5 VDC.
+[   ] Measure the base plate temperatur e. If it exceeds 50ºC, check for proper 
+laser head heat sinking—refer to “Checklist 11: Base Plate Over 
+Temperature” (p. 112).
+[   ] If using external interlocks, veri fy all external interlocks are closed.
+[   ] Contact Coherent Technical Support.CUBE Laser System Operator’s Manual
+110
+8.6 Checklist 5a: Low Power (RS-232 
+Control)
+Measure power only with a calibrated power meter prior to any external optics, or 
+use the “?P” command to obtain output power.
+[   ] If the system does not achieve the specified maximum power level, use 
+the “?SP” and “?MAXLP” queries to ens ure the output power is set to a 
+maximum (MAXLP).
+[   ] Make sure the output window is clean.
+[   ] Use the ?P RS-232 query to check current laser power. If the returned 
+value does not represent the expected laser power, use P=<value> to set 
+the desired laser power.
+[   ] If system does not respond to the “? P” command, verify proper RS-232 set 
+up.
+[   ] If the value returned by ?P differs from the set power by more than 
+1.5 mW, contact Coherent Technical Support.
+[   ] Use the ?CW query to check for Pulse mode. If CW=0, and no voltage is 
+present on the SMB connector, the laser output will represent threshold. 
+The threshold output is normally in the microwatt range.
+[   ] Use the ?EXT query to check for active external analog power control. 
+If ?EXT returns a value of 1, laser power is reduced. Enter EXT=0 to 
+ensure normal power levels.
+8.7 Checklist 5b: Low Power (Manual 
+Mode)
+Make sure laser power is measured by a calibrated power meter, prior to external 
+optics.
+In Manual mode, the CUBE allows for computer control and queries. Refer to 
+“Checklist 4a: System Shuts Down (RS-232 Control)” (p. 109) for appropriate 
+computer connections and settings.
+[   ] Verify the output window is clean.
+[   ] If using the Control Box for external power control, verify the expected 
+voltage to the BNC connector.
+[   ] If the system does not achieve the specified maximum power level, use 
+the “?SP” and “?MAXLP” queries to ens ure the output power is set to a 
+maximum (MAXLP).
+[   ] Verify the proper RS-232 command is issued. For example, issue the P=10 
+command. The “?P” query or external power measurement should result 
+in 10 mW (?P=10 mW).
+[   ] If the system does not respo nd to the “?P” command, verify proper 
+RS-232 set up.
+[   ] If “?P” response indicates low power, contact Coherent Technical Support.Troubleshooting
+111
+8.8 Checklist 6: Excessive Scattered 
+Light (All Operating Modes)
+[   ] Observe the output beam prior to hitting any external optics. If the output 
+beam is OK, clean the external optics.
+[   ] Verify the output window is clean.
+[   ] Contact Coherent Technical Support.
+8.9 Checklist 7: Output Power Not Stable 
+(All Operating Modes)
+[   ] Measure power only with a calibra ted power meter prior to any external 
+optics.
+[   ] Allow the system to warm  up for at least 5 minutes.
+[   ] Verify the output window is clean.
+[   ] Verify all cable connections are secure.
+[   ] Measure base plate temperature over a 5-minute period. If the base plate 
+temperature is not stable, check for proper heat dissipation—refer to 
+“Checklist 11: Base Plate Over Temperature” (p. 112).
+[   ] If using the Control Box for laser pow er control, verify a stable input voltage 
+to the BNC connector.
+[   ] Contact Coherent Technical Support.
+8.10 Checklist 8: Beam Noise Out of Spec 
+(All Operating Modes)
+[   ] Make sure beam noise is measured prior to any external optics.
+[   ] Verify the output window is clean.
+[   ] Check for proper heat sinking.
+[   ] Verify there is no vibrations at the laser.
+[   ] Check for proper grounding of the laser cover.
+[   ] Contact Coherent Technical Support.CUBE Laser System Operator’s Manual
+112
+8.11 Checklist 9: No RS-232 
+Communication
+[   ] Verify all connections are secure.
+[   ] Verify RS-232 setting (baud rate, etc.) See RS-232 control section.
+[   ] Ensure the communication cable is not a Null-modem.
+[   ] Verify cable length does not exceed 5 m (16.4ft).
+[   ] Use a second computer to exclude a defective RS-232 port at the 
+controlling computer.
+[   ] Contact Coherent Technical Support.
+8.12 Checklist 10: Transverse Mode is Not 
+TEMoo
+[   ] Make sure the beam is observed prior to external optics. If the beam 
+quality is correct, clean the external optics.
+[   ] Verify the output window is clean.
+[   ] Contact Coherent Technical Support.
+8.13 Checklist 11: Base Plate Over 
+Temperature
+[   ] Verify the proper size of the heat sink—refer to “CUBE Heat Sink 
+(Optional)” (p. 40) for more information.
+[   ] Verify proper operation of the Heat Si nk (that is, if a fan is used to cool the 
+Heat Sink, make sure it is operating properly.)
+[   ] Verify the Heat Sink compound, if used, is applied evenly between the 
+laser head and the Heat Sink.
+[   ] Verify the surface of the Heat Si nk contacting the laser head is flat.
+[   ] Verify the ambient temperature does not exceed 50ºC.113
+AP ARTS LIST
+This section describes the parts shipped with the CUBE laser system.
+The following parts can be ordered by contacting Coherent Technical Support:
+• By email:  customer.support@coherent.com
+• Visit our website: www.Coherent.com 
+and search for a Coherent service representative for your local area.
+• By phone: 1-(800)-367-7890 or 1-(408)-764-4557 outside the U.S.
+When communicating with Coherent Technical Support, be prepared to provide 
+the model and serial number of the Laser Head to the Support Engineer 
+responding to your request. You can locate the date of manufacturing for your 
+laser system on the label with the serial number.
+• Effective January 1, 2007, the CUBE Laser System was released as 
+RoHS-compliant.
+• If your laser system was purchased prior to January 1, 2007, contact Coherent 
+Technical Support to determine if the items listed in Table A-1 are the 
+appropriate part numbers for your laser system.
+A.1 Parts in the CUBE Laser System
+Table A-1 lists the parts included with the CUBE laser system:  
+Table A-1.  Parts List for CUBE Laser System
+P/N COMPONENT QTY
+See CUBE 
+data sheet
+CUBE Laser Head 1
+1039966 CUBE Control Box 1
+1072454 CUBE Power Supply, 6 VDC, 2.5A, Switched 1
+1108063 Power Cord, North America 1
+1072166 CUBE Interface Cable (Quatro Digital Interface) included at 
+no extra charge. This cable provides connectors from the 
+CUBE laser to the control box, I/O, RS-232, and power.
+(NOTE The cable connects to the optional CUBE I/O Cable, 
+8-Pin to Flying Leads, P/N 1103937, not included with the 
+laser system and which must be ordered separately.)
+1
+1108906 USB Cable 1
+1147585 CUBE Quick Start Guide 1
+1079890 CD-ROM with CUBE Operator’s Manual and Coherent CUBE 
+Connection Software
+1
+Included Modified M4 Mounting Screws (4 each),
+M4 Small Pattern Washer (4 each), and 
+small Hex wrench (1 each)CUBE Laser System Operator’s Manual
+114
+A.2 Optional Accessories (Order 
+Separately)
+Optional Accessories for the CUBE laser system are listed in Table A-2. 
+NOTE:
+These accessories are not shipped with the CUBE Laser System and must be 
+ordered separately.
+ 
+Table A-2.  Accessories for the CUBE Laser System
+P/N DESCRIPTION
+1073840 CUBE Heat Sink with Fan
+1116779 CUBE Right-Angle Heat Sink Mount 
+1079150 CUBE Secondary Emission Indicator Lamp
+1040408 Non-Shorted RCA Plug
+1103937 CUBE I/O Interface Cable, 8-Pin to Flying Leads 
+(This optional cable connects to the CUBE Quatro Digital Interface 
+Cable, P/N 1072166. That cable is included with the CUBE Laser 
+System.)
+1415602 High-Speed USB-to-Serial RS-232 Adapter
+1080090 Cable Extension to Extend Control Box or 
+RS-232 M-F, DB-9 Cable115
+BP OWER METERS AND SENSORS
+For the most common diagnostics—measuring the output power of the CUBE 
+laser system—Coherent offers a variety of instruments for laser test and 
+measurement that cover that entire wavelength range.
+This section describes power meters and sensors that are an ideal fit for the 
+CUBE product family, including:
+• For Cube lasers with a meter:
+• FieldMaxII-TO Las er Power Meter
+• PS10 sensor
+• For Cube lasers in installa tions that want a meter integrated into the sensor: 
+• USB PowerMax UV/VIS Power Sensor
+or USB PowerMax UV/VIS Wand
+• USB/RS PS10Q sensor (USB or RS)
+• USB PS10 sensor
+For more detailed information and product data sheets, visit the Coherent 
+website:
+https://www.coherent.com/measurement-control/measurement/powermax-
+usb-sensors 
+B.1 Meter: FieldMaxII–TO
+The FieldMaxII–TO is an affordable and versatile digital meter that is designed for 
+ease-of-use in field service and production applications. The meter supports 
+on-board analysis of mean, minimum, maximum, and standard deviation 
+statistics.
+Coherent recommends a FieldMaxII-TO digital power and energy meter for use 
+with the PS10 sensor. Figure B-1 shows the FieldMaxII-TO Laser Power Meter 
+(P/N 1098579):  
+Figure B-1.  FieldMaxII–TO Meter (Power Only)
+CUBE Laser System Operator’s Manual
+116
+The FieldMaxII-TO Laser Power Meter measures power from nW to kW, and 
+pulse energy from nJ to J at up to 300 pps. The Measurement Range is 
+dependent on the sensor (refer to the sensor specifications for details).
+A FieldMaxII–TO meter features:
+• A large, easy-to-read back-lit LCD display
+• An intuitive user interface offering bu tton-driven control for simple operation.
+•
+Area function for density measurements (J/cm2 or W/cm2)
+• the FieldMaxII USB interface to use wit h the FieldMaxII PC software provided 
+by Coherent
+• Simulated analog-like movement for laser tuning
+• LabVIEW instrument driver; simple La bVIEW examples are provided for basic 
+functionality of the meter
+• Compatible with Windows 7, 8, and 10  operating systems (32-bit and 64-bit) 
+The FieldMaxII PC software supports trend charting, tuning, statistics, and 
+logging data to a file.
+Multiple meters can be run on a single PC. This can be useful for final test and 
+burn-in applications.
+For more advanced interface and full operation in automation, refer to the 
+LabMax-Pro SSIM Meter User’s Manual. 
+For more information about products, go to the Coherent website:
+https://www.coherent.com/measurement-control/measurement/fieldmaxii-to
+ 
+B.2 PowerMax Sensors
+Coherent PowerMax-USB sensors provide plug-and-play laser power 
+measurement directly on a PC without the need for additional electronic 
+instrumentation.
+For more information, see the Coherent website:
+https://www.coherent.com/measurement-control/measurement/high-
+sensitivity-thermopile-sensors-to-2w-rohs 
+This section describes a variety of PowerMax sensors that support the CUBE 
+Laser System.
+B.2.1 PS10 Sensor
+The PS10 model sensors (P/N 1098350) are thermally stabilized, amplified 
+thermopile power sensors with a broad spectral response, high sensitivity, and a 
+large active area. These sensors are ideal for measuring laser diodes, HeNe and 
+HeCd lasers, and small ion lasers.
+The PS10 model includes a light tube mounted to the front of the housing, which 
+minimizes the effects of background radiation and narrows the field of view. 
+Alternatively, the light tube can be removed and replaced by a fiber adapter 
+accessory.Power Meters and Sensors
+117
+The PS10 sensor shown, in FIG, is a low-power thermopile sensor with 10 uW 
+resolution (10mm aperture).  
+Features of the PS10 sensor include:
+• Thermally stabilized design for low power sensitivity
+• Noise equivalent power down to 3 μW
+• Spectrally flat; good for broadband light sources
+• Wavelength Range: 300 to 2100 nm
+B.2.2 USB Sensors
+The measurement circuitry typically found in a standalone meter has been 
+reduced in size to extent that it can now fit inside a USB connector. The circuitry 
+and USB connector have been adapted into a ‘PowerMax-USB’ cable that can be 
+integrated to most Coherent power sensors, providing accurate power 
+measurements of all types of CW and pulsed sources from the UV to Far IR.
+Table B-1 lists the Coherent sensors and lists the part number for each.  
+Each of these are described in the subsections that follow.
+Figure B-2.  PS10 Thermopile Sensor
+Table B-1.  Thermopile Sensor Product Description
+PRODUCT/DESCRIPTION P/N
+USB PS10 High-Sensitivity Thermopile Sensor P/N 1174260 (USB)
+USB PowerMax UV/VIS Power Sensor 
+or USB PowerMax UV/VIS Wand 
+P/N 1168337
+P/N 1212310
+USB/RS PS10Q Sensor (USB or RS) P/N 1287077 (USB)
+P/N 1288992 (RS)CUBE Laser System Operator’s Manual
+118
+B.2.2.1 USB PS10 Sensor
+The USB PS10 High-Sensitivity Thermopile Sensor (PN 1174260) is USB-
+enabled, low-power thermopile sensor with 3 uW NEP (10 mm aperture) (RoHS).
+This Laser Measurement device provides direct USB 2.0 connection to a PC, with 
+measurement resolution down to 10 µW and a wide spectral range.
+The PS10 model includes a light tube mounted to the front of the housing, which 
+minimizes the effects of background radiation. The light tube can be removed and 
+replaced by FC or SMA fiber connectors.
+Figure B-3 shows the USB PS10 Sensor  
+Features of the USB PS10 Sensor include:
+• Thermally stabilized design for low power sensitivity
+• Noise equivalent power down to 3 μW
+• Spectrally flat; good for broadband light sources
+B.2.2.2 PowerMax-USB UV/VIS Sensors
+There are two models available for the PowerMax-USB UV/VIS sensors:
+• PowerMax-USB UV/VIS Quantum Power Sensors (P/N 1168337)
+USB-enabled, Low power optical sensor with 100 nW NEP with ND2 filter 
+(10 mm aperture) (RoHS)
+• PowerMax-USB UV/VIS Wand (P/N 1299161)
+PowerMax USB Wand UV/VIS Quantum Power Sensor, Metal Enclosure
+Figure B-4 shows the PowerMax-USB UV/VIS Quantum Power Sensor and the 
+PowerMax-USB UV/VIS Wand:  
+Features of the UV/VIS sensors include:
+• Large 8 mm and 10 mm apertures
+• High-sensitivity Silicon photodiode
+• Low power measurements down to 5 μW (wavelength dependent)
+• Spectral response from 325 nm to 1065 nm
+Figure B-3.  USB PS10 Sensor
+Power Meters and Sensors
+119
+The PowerMax-USB UV/VIS Quantum sensors incorporate a Silicon photodiode, 
+for measurement of power from 5 μW to several hundred milliwatts. The 
+measurable power varies significantly by wavelength.
+B.2.2.3 USB/RS PS10Q Sensor
+There are two models available for the PS10Q Sensor:
+• PS10Q Sensor (P/N 1287077) — for USB
+• PS10Q Sensor (P/N 1288992) — for RS
+Where optimum stability is required, the PS10Q includes a wedged quartz 
+window, for applications from 0.3 to 2.0 μm. The quartz window more effectively 
+eliminates thermal background radiation and the effects of air currents.
+Features of the USB PS10Q Sensor include:
+• Thermally stabilized designs 
+• Power measurement from 100 μW to 1 W
+•1 0 μW resolution
+• 10 mm and 19 mm apertures
+• Direct USB and RS-232 interfaces
+• FC and SMA fiber adapters
+• RoHS compliant
+Figure B-4.  PowerMax-USB UV/VIS Sensor and Wand
+CUBE Laser System Operator’s Manual
+120121
+CS ERVICE & SUPPORT
+This section provides information about:
+• How to contact Technical Support
+• How to obtain service
+• Product shipping instructions
+C.1 Technical Support
+Coherent provides telephone and web-based technical assistance as a service to 
+its customers and assumes no liability for any injury or damage that can occur at 
+the same time with such services.
+Operation of any Coherent laser with any of its interlocks (or safety features) 
+defeated is always at the operator's own risk. Under no circumstances do these 
+support services affect the terms of any Warranty agreement between Coherent 
+and the buyer.
+Be prepared to provide the following information to the Product Support Engineer 
+responding to your request:
+• Model or part number of your unit
+• Laser head serial number
+• A description of the problem
+• Any corrective steps you may have attempted
+C.1.1 Support in the USA and North America
+Should you experience any difficulties with your laser or need product or technical 
+information, contact Coherent as follows:
+• By email:  customer.support@coherent.com
+• Visit our website: www.Coherent.com
+Should you need further assistance, please contact Coherent Technical Support:
+• By phone: 1-(800)-367-7890 or 1-(408)-764-4557 outside the U.S.
+Telephone coverage is available Monday through Friday (except U.S. holidays 
+and company shutdowns). Inquiries received outside of normal office hours will 
+be captured by our automatic answering system and calls will be quickly returned 
+the next business day.
+C.1.2 International Support
+If you are located outside the U.S., visit www.Coherent.com for technical 
+assistance, or contact your local Service Representative directly:
+• Germany: +49–6071–968–0
+• Japan: +813–5635–8680
+On the Coherent website, you can also view contact information (telephone 
+numbers and addresses) for Service Representatives worldwide.CUBE Laser System Operator’s Manual
+122
+C.2 Obtaining Service
+To obtain service under this warranty, Customer must notify the Company of the 
+defect before the expiration of the warranty period and make suitable 
+arrangements for the performance of service.
+The Company shall, in its sole discretion, determine whether to perform warranty 
+service at the Customer's facility, at the Company's facility, or at an authorized 
+repair station.
+If Customer is directed by the Company to ship the product to the Company or a 
+repair station, Customer shall:
+• Package the product (to protect from damage during shipping) as instructed in 
+“Product Shipping Instructions” next.
+• Ship it to the address specified by the Company, with shipping prepaid. back 
+to Coherent in conjunction with recalibration and recertification.
+• Coherent shall pay the cost of shipping the Product back to the Customer in 
+conjunction with product failures within the first twelve (12) months of time of 
+sale or during an extended 12-month warranty period.
+C.3 Product Shipping Instructions
+You must include a Returned Material Authorization number (RMA) assigned by 
+the Company on the outside of all shipping packages and containers. Items 
+returned without an RMA number are subject to return to the sender. Detailed 
+instructions to prepare a product for shipping are provided in the next section.
+To prepare a product for shipping to Coherent:
+1. Contact Customer Service for a Return Material Authorization number.
+2. Attach a tag to the product that incl udes the name and address of the owner, 
+the person to contact, the serial number, and the RMA number you received 
+from Coherent Customer Service. Pack this tag inside the box.
+3. Wrap the product with polyethyle ne sheeting or equivalent material.
+4. Using the original shipping and packaging materials, pack the product.
+5. Seal the shipping carton with shipping tape or an industrial stapler.
+6. Add the RMA number you received from Coherent Customer Service to the 
+shipping label on the outside of the box. Ship the product to the following 
+address:
+Coherent, Inc.
+Attn: RMA #
+27650 SW 95th Ave.
+Wilsonville, OR 97070 USA123
+DW ARRANTY
+Coherent, Inc. warrants OBIS Laser Systems to the original purchaser (the Buyer) 
+only; that the laser system that is the subject of this sale, (a) conforms to 
+Coherent's published specifications, and (b) is free from defects in materials and 
+workmanship.
+Laser systems are warranted to conform to Coherent's published specifications and 
+to be free from defects in materials and workmanship as specified in the sales or 
+service contract. Replacement units shipped within warranty carry the remainder 
+warranty of the failed unit.
+D.1 Responsibilities of the Buyer
+The Buyer is responsible for providing the appropriate utilities and an operating 
+environment as outlined in the product literature. Damage to the laser system 
+caused by failure of Buyer's utilities or failure to maintain an appropriate operating 
+environment, is solely the responsibility of the Buyer and is specifically excluded 
+from any warranty, warranty extension, or service agreement.
+The Buyer is responsible for prompt notification to Coherent of any claims made 
+under warranty. In no event will Coherent be responsible for warranty claims made 
+later than seven (7) days after the expiration of warranty.
+The foregoing warranty shall not apply to defects resulting from any of the following 
+conditions:
+D.2 Limitations of Warranty
+The foregoing warranty shall not apply to defects resulting from any of the following 
+conditions:
+• Components and accessories manufacture d by companies other than Coherent, 
+which have separate warranties
+• Improper or inadequate maintenance by the Buyer
+• Buyer-supplied interfacing
+• Operation outside the environmenta l specifications of the product
+• Unauthorized modification or misuse
+• Improper site preparation and maintenance
+• Opening the housing
+Coherent assumes no responsibility for customer-supplied material. The 
+obligations of Coherent are limited to repairing or replacing, without charge, 
+equipment that proves to be defective during the warranty period. Replacement 
+sub-assemblies may contain reconditioned parts. Repaired or replaced parts are 
+warranted for the duration of the original warranty period only. The warranty on 
+parts purchased after expiration of system warranty is ninety (90) days. This 
+warranty does not cover damage due to misuse, negligence or accidents; or 
+damage due to installations, repairs or adjustments not authorized specifically by 
+Coherent.CUBE Laser System Operator’s Manual
+124
+This warranty applies only to the original purchaser at the initial installation point 
+in the country of purchase, unless otherwise specified in the sales contract. The 
+warranty is transferable to another location or to another customer only by special 
+agreement, which will include additional inspection or installation at the new site. 
+Coherent disclaims any responsibility to provide product warranty, technical or 
+service support to a customer that acquires products from someone other than 
+Coherent or an authorized representative.
+THIS WARRANTY IS EXCLUSIVE IN LIEU OF ALL OTHER WARRANTIES, 
+WHETHER WRITTEN, ORAL OR IMPLIED, AND DOES NOT COVER 
+INCIDENTAL OR CONSEQUENTIAL LOSS. COHERENT SPECIFICALLY 
+DISCLAIMS THE IMPLIED WARRANTIES OF MERCHANTABILITY AND 
+FITNESS FOR A PARTICULAR PURPOSE.125
+GLOSSARY
+°C Degrees Centigrade or Celsius
+°F Degrees Fahrenheit
+Ω Ohm(s)
+μ Micron(s)
+μm Micrometer(s) = 10 -6 meters
+μrad Microradian(s) = 10 -6 radians
+μsec Microsecond(s) = 10 -6 seconds
+1/e2 Beam diameter parameter = 0.13534
+AC Alternating current
+Address A unique one-byte identifier assigned to each device on the bus
+Amp Ampere(s)
+APC Angle physical contact
+Application Protocol
+A set of application defined commands and replies used to implement a system of 
+cooperative devices
+Automatic Send Data Control
+An optional hardware feature that is useful to control enable/disable of transmit enable 
+line of RS-485 transceiver
+BNC Type of connector
+Broadcast Message
+Message sent by a master device and received by all connected slave devices
+BUSMGMT
+Message is a bus management message.
+CCB Coherent Connection Bus, a RS-485 communication bus
+CDRH Center for Devices and Radiological Health
+cm Centimeter(s)
+CW Continuous wave
+DC Direct current
+DDL Direct diode laser
+Destination Address
+Address of the recipient device for a message
+DHCP Dynamic Host Configuration Pr otocol. A protocol that provides a means to dynamically 
+allocate IP addresses to computers on a local area network.
+DLE Data link escape
+EOM A two-byte sequence indicating the end of a message packet
+ESD Electrostatic discharge
+ETX End of message data
+FC Fiber-connector
+FP Fiber pigtail
+g Gram(s) or earth’s gravitational force (gravity)
+GUI Graphical user interface
+Hz Hertz or cycles per second (f requency) (= 1/pulse period)
+IEC International Electrotechnical Commission
+IR Infrared (wavelength)
+I/O Input/output
+kg Kilogram(s) = 10
+3 gramsBeamView.NET User Manual
+126
+kHz Kilohertz = 10 3 hertz
+kOhm Kilohm(s) = 10 3 ohms
+LCD Liquid crystal display
+LED Light emitting diode
+m Meter(s) (length)
+mA Milliamp(s) = 10 -3 Amperes
+mAmp Milliampere(s)
+Master Controlling device which manages bu s direction, assigns device addresses, 
+and generally the source for all application protocol command initiation
+MHz Megahertz = 10 6 hertz
+mm Millimeter(s) = 10 -3 meters
+mrad Milliradian(s) = 10 -3 radians (angle)
+ms Millisecond(s) = 10 -3 seconds
+mV Millivolt(s)
+MVP Modulation and variable power
+mW Milliwatt(s) = 10 -3 Watts (power)
+NA Numerical aperture
+nm Nanometer(s) = 10 -9 meters (wavelength)
+Nm Newton meter (torque)
+OEM Original equipment manufacturer
+OPSL Optically-pumped semiconductor laser
+oz·in. Ounce inches
+PIP Port Identification Pin, a signal pin located on the cable connecting the slave 
+device to the CCB
+PPS Pulses per second
+rms Root mean square (effective value of a sinusoidal wave)
+RMA Return material authorization
+SCPI Standard commands for programm able instruments. This standard, 
+developed by Hewlett-Packard, complements IEEE 488.2 and is promoted by 
+the SCPI Consortium.
+SDR Shrunk delta ribbon. This connector type is used on the back panel of the OBIS 
+Laser for the full-feature I/O cable.
+Slave Device which receives and interprets messages and responds as required
+SOM A two-byte sequence indicating the start of a message packet
+Source Address
+Address of the device transmitting a message
+Standard Message
+Message sent from the master device to a specific slave device address
+SRCCCB
+Message originated from CCB stack.
+SRCCONT
+Message originated from master device (controller).
+STX Start of message data
+System Protocol
+A set of predefined bus management commands and responses used by CCB 
+protocol stacks for set-up and management of the bus
+TEC Thermoelectric cooler
+TEM Transverse electromagnetic mode (cross-sectional laser beam mode)
+TTL Transistor-transistor logic
+UART Universal asynchronous receiver/transmitter127
+UFC Ultra-flat contact
+UV Ultraviolet
+VV o l t ( s )
+VAC Volts, alternating current
+VDC Volts, direct current
+W Watt(s) (power)BeamView.NET User Manual
+128129
+INDEX
+A
+Accession numbers 23
+Analog control 69
+B
+back reflection 16
+Buyer responsibilities 123
+C
+Cable, interface 58
+CAUTION 11
+CDRH
+Accession numbers 23
+compliance in manual 11
+Feature 93
+Classification, laser 22
+Compliance
+China ROHS 25
+EU ROHS 25
+Component lasers 15
+Connections
+Laser to the control box 59
+Power 58
+Control box
+Interlock connection 60
+Keyswitch 59
+CUBE, CDRH accession numbers 23
+CW operation 68
+D
+DANGER 11
+Digital control 73
+Disable CDRH procedure 93
+E
+export control laws 12
+H
+Heat dissipation 42
+Heat sink
+Heat dissipation 42
+Requirements 41, 42
+I
+icons for safety symbols 12
+Installation
+Heat sink 41
+USB driver 77
+installation 53
+Interface cable 58
+Interlock
+Control box 60
+Requirements 94
+Interlock connection
+Control box 60
+K
+Keyswitch, control box 59
+L
+Laser emission, classification 22
+Laser safety 13
+Equipment and training 28
+Guidelines 27
+Publications 27
+Standards 27
+Location of safety labels 24
+M
+Maximum accessible radiation level 15
+N
+NOTICE 11
+O
+Operation
+CW 68
+Optical safety 14
+Safety glasses 15
+P
+Power connection 58
+Power supply
+Specifications 38, 39
+R
+Receiving and inspection 53
+Requirements
+Heat sink 41, 42
+Interlock 94
+Responsibilities of the buyer 123
+RS-232
+Commands and queries 96, 99
+Connector 62
+S
+Safety
+electrical 13
+Equipment and training 28
+Features 22
+Glasses 15
+Guidelines 27
+Label location 24
+Labels 24
+Laser 13
+Optical 14
+optical 13
+Publications 27
+standards, laser 27
+safety 13
+Safety features 22
+Key control 20
+Laser emission indicators 20
+Protective housing 19
+Remote interlock 20
+Shutter 22
+safety symbols 12130
+set-up 53
+signal words 11
+Signal words used in this manual 11
+Specifications
+Power supply 38, 39
+Symbols used in this manual 12
+System standby
+Sleep mode 94
+T
+Timing diagram 74
+U
+USB
+Control 77
+Driver installation 77
+W
+WARNING 11
+Warranty
+Limitations of warranty 123
+Responsibilities of the buyer 123CUBE Laser System Operator’s Manual
+© Coherent Inc., September 2020 (RoHS)
+Part No. 1079231, Rev AH
+*1079231*

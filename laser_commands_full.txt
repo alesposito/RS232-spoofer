@@ -1,0 +1,1316 @@
+CUBE Laser System Operator’s Manual
+14
+The above list is not intended to be exhaustive. Anyone operating the laser must 
+consider the interaction of the laser system with its specific working environment 
+to identify potential hazards.
+WARNING!
+Use of controls or adjustments or performance of procedures other than 
+those specified herein may result in hazardous radiation exposure.
+1.1.1 Optical Safety
+Because of its special properties, laser light poses safety hazards not associated 
+with light from conventional sources. The safe use of lasers requires that all laser 
+users, and everyone near the laser system, are aware of the dangers involved. 
+The safe use of the laser depends upon the user being familiar with the 
+instrument and the properties of coherent, intense beams of light.
+A laser produces optical power levels that are dangerous to the eyes and skin if 
+exposed directly or indirectly. Operate all laser products only with proper eye and 
+skin protection at all times.
+DANGER!
+Never view directly emitted or scattered radiation with unprotected eyes. 
+Direct eye contact with the output beam from the laser will cause serious 
+damage and possible blindness.
+At all times, ensure that all personnel who operate, maintain or service the laser 
+are protected from accidental or unnecessary exposure to laser radiation 
+exceeding the accessible emission limits defined in the laser safety standards.
+The greatest concern when using a laser is eye safety. In addition to the main 
+beam, there are often many smaller beams present at various angles near the 
+laser system. These beams are formed by specular reflections of the main beam 
+at polished surfaces such as lenses or beam-splitters. While weaker than the 
+main beam, such beams may still be sufficiently intense to cause eye damage.
+1.1.1.1 Laser Safety Eyewear
+Always wear appropriate laser safety eyewear for protection against the specific 
+wavelengths and laser energy being generated. The appropriate eye protection 
+can be calculated as defined in Section 4.4.4 of the ANSI Z136.1 standard. Other 
+national safety requirements for other national or international standards include 
+ACGIH, OSHA, and the section, “EN 207 Personal eye protection equipment - 
+Filters and eye-protectors against laser radiation (laser eye-protectors)”.
+CAUTION!
+Laser safety eyewear protects the user from accidental exposure to laser 
+radiation by blocking light at the laser wavelengths. However, laser safety 
+eyewear may also prevent the operator from seeing the beam or the beam 
+spot. Exercise extreme caution even while wearing safety glasses.
+Laser Safety
+15
+Precautions include:
+1. Never look directly into th e laser light source or at scattered laser light from any 
+reflective surface. Never sight down the beam into the source.
+2. Maintain experimental setups at low heights to prevent inadvertent beam-eye 
+encounter at eye level.
+WARNING!
+Laser safety glasses can present a hazard as well as a benefit; while they 
+protect the eye from potentially damaging exposure, they block light at the 
+laser wavelengths, which prevents the operator from seeing the beam. 
+Therefore, use extreme caution even when using safety glasses.
+3. As a precaution against accidental exposure to the output beam or its 
+reflection, those using the system must wear laser safety glasses as required 
+by the wavelength being generated.
+1.1.1.2 Maximum Power Levels
+The CUBE laser may emit VISIBLE and/or INVISIBLE LASER RADIATION over 
+wavelengths of 375 nm to 730 nm from the aperture in the front of the laser. The 
+potentially accessible emissions depend on the specific model.
+Table 1-1 lists the maximum power levels.  
+Laser-to-laser tolerance: All lasers ±5 nm except CUBE 640-40 with 635 to 642 
+nm range, CUBE 640-100 with 635 to 644 nm range, CUBE 660 with 652 to 665 
+nm range, and CUBE 730 ±10 nm.
+Table 1-1.  Maximum Power Levels for CUBE Lasers
+MODEL WAVELENGTH RANGE MAXIMUM POWER
+375 nm, 16 mW 370 nm – 380 nm 85 mW
+405 nm, 50 mW
+400 nm – 410 nm 160 mW
+405 nm, 100 mW
+445 nm, 40 mW 440 nm – 450 nm 70 mW
+488 nm, 50 mW 483 nm – 493 nm 80 mW
+640 nm, 40 mW 635 nm – 642 nm 70 mW
+640 nm, 100 mW 635 nm – 644 nm 160 mW
+660 nm, 60 mW
+652 nm – 665 nm 
+100 mW
+660 nm, 100 mW 150 mW
+685 nm, 40 mW 680 nm – 690 nm 80 mW
+730 nm, 30 mW 720 nm – 740 nm 33 mW
+CUBE Laser System Operator’s Manual
+16
+1.1.2 Laser Back Reflection
+This section describes back reflection and tells how to prevent damage or noise 
+caused by back reflection.
+1.1.2.1 What is Back Reflection?
+Back reflection (also referred to as retroreflection) occurs when a part of the laser 
+beam is sent back into the laser’s cavity through the aperture. Back reflection can 
+be caused by any object in front of the laser (such as other equipment or even a 
+wristwatch) and can result in instability, noise, or damage to the laser.
+In a normal application, the laser beam exits the beam aperture and none of the 
+light from the laser is reflected back. Ideally, 100% of the output power from the 
+laser is used in the application and none of the light is scattered or sent back into 
+the laser exit aperture.
+The amount of back reflection that can damage a laser diode changes from 
+device-to-device. Sometimes a back reflection as low as a few percentage of the 
+total beam power is sufficient to cause damage.
+Damage from back reflection can be immediate, or it can be subtle and slowly 
+decrease the life of the laser.
+Indications that there are back reflections to the laser that may cause permanent 
+damage include:
+• No output power
+• Low output power
+• Over-current of the laser diode
+1.1.2.2 How to Prevent Back Reflection
+The following procedure describes how to prevent a strong back reflection and 
+possible damage to the laser:
+1. Use the USB or RS-232 controls to set the power to minimum output power 
+before opening the laser aperture.
+2. Do optical or laser alignment at this low output power to confirm there are no 
+back reflections.
+Sources of back reflections include:
+• Fiber, Fiber Ferrule, or Fiber Connector 
+• Optical Filters that are not angled but are perpendicular to the beam
+• Neutral Density Glass or Beam Attenuat ors that have a front surface reflection 
+that can create a back reflection
+• Beam Block at normal incidence that  reflects power back into the laser
+• Plano-concave or Plano-convex lenses where the flat surface reflects back 
+part of the beam
+• Power measurement probes that use a re flective attenuator or have a surface 
+that reflects the laser light
+• Mirrors or other shiny surfaces from mounts or other optical components in the 
+beam path
+When measuring laser power with a power meter, always angle the power sensor 
+so that the laser beam does not reflect back into the laser cavity.
+Laser Safety
+17
+CAUTION!
+DO NOT let movement and alignment create a back reflection.
+In many cases an object is positioned in front of the laser as a beam block. Make 
+sure the object is not reflective and does not create a back reflection to the laser.
+If you cannot adjust your application to decrease the back reflection of the laser 
+light into the laser's aperture, add an optical isolator to protect the laser. Although 
+the optical isolator adds cost and requires additional space, it can be an 
+appropriate safety factor to increase the life of the laser.
+Be aware of every optical surface in front of the laser. All object have the 
+opportunity to create a back reflection. In many cases the front surface and the 
+back surface of the optic are a source of back reflection.
+• The closer the object is to the laser, the more angle is needed to direct the back 
+reflection away from the laser aperture.
+• The farther the object is away from the laser, the less angle is needed to direct 
+the back reflection away from the laser aperture.
+IMPORTANT!
+The Coherent product Warranty does not cover damages to the laser caused 
+by customer handling failure. Take precautions with initial set-up to avoid 
+damage to the laser. Avoid any condition where any part of the laser beam 
+reflects back into the laser exit aperture.
+1.2 Summary of Precautions
+Due to inherent safety hazards when using lasers, the user is advised to follow 
+these precautions:
+1. Observe all safety precautions listed in the Operator’s Manual.
+2. Limit access to the laser to qualified users who are familiar with laser safety 
+practices and who are aware of the dangers involved.
+3. Use the laser in an enclosed room. Las er light will remain collimated over long 
+distances and therefore presents a potential hazard if not confined.
+4. Post warning signs in the area of the laser beam to alert those present.
+5. Advise everyone using the laser of th ese precautions. It is good practice to 
+operate the laser in a room with controlled and restricted access.
+6. Extreme caution must be exercised when using solvents in the area of the 
+laser.
+7. To avoid laser back reflection:
+• Take precautions when moving objects that can create a back reflection in 
+front of the laser.
+• Review the objects in front of the laser and note which surfaces are a 
+possible hazard for back reflections. Change the objects to be less 
+reflective whenever possible. Adding Anti-Reflective (AR) coatings to 
+optics and more diffuse surfaces to mounts or beam shutters can help.
+CUBE Laser System Operator’s Manual
+18
+• If possible, add an angle to the object so that the reflection does not enter 
+the laser cavity.
+• Decrease the power from any possible  back reflections by starting the 
+laser at lower output power—for example 10% output power—before 
+opening the laser shutter.
+• Using correct safety precautions, watch where the reflections from 
+objects are returning to make sure the reflections are not at or near the 
+laser exit aperture.
+• Take extra precautions when using a laser power meter— consider how 
+close the measurement is being taken to the laser and the angle at which 
+the beam can reflect off the sensor so that it doesn't reflect back into the 
+laser.
+• A laser that shows low output power, no  output power, over-current, or high 
+noise, indicates a possibility that there is a back reflection into the laser.
+• Add an optical isolator to those app lications that have laser exit aperture 
+back reflections that cannot be corrected by angling the optics.
+1.2.1 Electrical Safety
+The Coherent CUBE laser system does not contain hazardous voltages. 
+DO NOT disassemble the enclosure. There are no user serviceable components 
+in the controller or laser head. All units are designed to be operated as 
+assembled. The Warranty will be voided if either the laser head, the 
+controller, or the cable is disassembled.
+CAUTION!
+Electrostatic charges as high as 4000 volts easily collect on the human body 
+and equipment and can discharge without detection. 
+Although the electronics features have input protection, permanent damage 
+can occur on devices subjected to high-energy electrostatic discharges. You 
+must take correct ESD precautions during installation and operation to 
+prevent damage or performance degradation. 
+The most common ESD damage occurs when handling a device during 
+installation or use. Take the necessary measures to protect the system from ESD.
+Dry air and carpet also create a higher potential for ESD. Remember to take 
+precautions or shielding not only for operations, but for demonstrations or trade 
+show exhibitions.
+Laser diode static sensitive parts or assemblies are bagged only in metalized 
+shielding (shiny gray) bags. NEVER use pink anti-static bags, because they 
+are a potential source of contamination that may impact laser lifetime!
+Laser Safety
+19
+1.3 Safety Features of the Laser
+The CUBE laser system includes safety features for both the laser head and the 
+Control Box, described in the following subsections.
+CAUTION!
+Use of controls, adjustments, or performance of procedures other than those 
+specified in this manual, may result in hazardous radiation exposure.
+1.3.1 Safety Features on the CUBE Laser Head
+The safety features on the laser head include:
+• Protective housing 
+• Manually-operated shutter 
+1.3.1.1 Protective Housing
+The laser head is enclosed in a protective housing that prevents human access to 
+radiation in excess of the limits of Class radiation as specified in the 21CFR, Part 
+1040 Section 1040.10 (f)(1) and IEC 60825-1 Clause 6.2. This is except for the 
+output beam, which is a Class IIIb laser. The protective housing should never be 
+opened.
+1.3.1.2 Shutter
+The laser contains a manually-operated shutter at the beam exit aperture on the 
+front of the laser head. When the shutter is fully closed, there is no laser radiation 
+emitted from the laser.
+1.3.2 Safety Features on the Control Box
+The safety features on the control box for the CUBE laser system include:
+• Key control
+• Laser emission indicator on the control box
+• Remote interlock
+• (Optional) A secondary emission indicator
+1.3.3 Key Control
+The control box is provided with a keyswitch that prevents the generation of laser 
+radiation when it is in the OFF position. Laser radiation may occur when the key 
+is in the ON position. 
+You can remove the key when it is in the OFF position; the key is not removable 
+when it is in the ON position.
+The system cannot be operated when the key is removed [CFR 1040.10 
+(f)(4)/IEC 60825-1, Clause 6.6].
+CUBE Laser System Operator’s Manual
+20
+1.3.4 Laser Emission Indicators
+The laser system control box provides a laser emission indicator, which is located 
+on the front panel of the control box.
+• When the control box indica tor is illuminated, the laser should be considered 
+dangerous; a laser beam may be created at any instant (via computer control, 
+for example).
+• When the control box LED indicator is not illuminated, laser radiation is not 
+possible.
+After the illumination of the control box indicator, there is a delay of at least 
+five seconds in until actual laser emission.
+CAUTION:
+Take all appropriate actions to avoid direct and indirect exposure to radiation 
+when working with lasers. See “Summary of Precautions” (p. 17) for a list of 
+actions for working safely.
+1.3.5 Secondary Emission Indicator (Optional)
+The Coherent CUBE laser system includes the capability to add a secondary 
+emission indicator. This indicator is sold as an optional accessory (P/N 1079150). 
+The secondary emission indicator can be mounted remotely at a distance up to 
+5 meters (16 feet) from the laser system.  
+1.3.6 Remote Interlock
+The control box is provided with a remote interlock circuit that, when open, 
+prevents the generation of laser radiation. See Figure-1-2 for details about the 
+interlock circuit configuration.  
+Figure 1-1.  Secondary Emission Indicator
+
+Laser Safety
+21
+Figure 1-2.  Interlock Diagram
+CUBE Laser System Operator’s Manual
+22
+1.4 Laser Classification and Compliance
+This section describes the classification of the CUBE laser system, as well as 
+compliance with various regulatory agencies.
+1.4.1 Laser Emission and Classification
+The Coherent CUBE laser system is classified by the United States National 
+Center for Device and Radiological Health (CDRH) as a CLASS IIIb laser 
+product. The CUBE laser emits VISIBLE and INVISIBLE LASER RADIATION of 
+370 nm to 740 nm wavelength from the aperture in the front of the laser head.
+1.4.2 Regulatory Compliance
+When used with the control box, Coherent CUBE laser systems comply with all of 
+the requirements of CDRH (21CFR Subchapter J) and EN60825-1.
+United States of America:
+The applicable United States Government requirements are contained in 
+21 CFR, Subchapter J, Part 1040 administered by the Center for Devices and 
+Radiological Health (CDRH).
+Europe:
+The European Community requirements for product safety are specified in the 
+Low Voltage Directive (LVD) (published in 2014/35/EU). The Low Voltage 
+Directive requires that lasers comply with the standard 
+EN 61010-1/IEC 61010-1 “Safety Requirements For Electrical Equipment For 
+Measurement, Control and Laboratory Use” and IEC 60825-1 “Safety of Laser 
+Products”. Compliance of this laser with the European requirements is certified 
+by the CE mark.
+To comply with CDRH and EN60825-1 requirements, the CUBE family of 
+products has been certified by an outside testing lab to be in compliance with the 
+environmental and safety directives listed here:
+EMI Standard for Emissions per:
+EN55011:2007
+Class A Radiated Emissions
+EN55011:2007
+Class A Conducted Emissions
+EN61000-3-2:2006
+Power Line Harmonics
+EN61000-3-3:1995:A1:2001:A2:2005
+Power Line Voltage Fluctuation and Flicker
+EMC Standard for Immunity per:
+EN61000-4-2:2003
+Electrostatic Discharge – Performance Criteria B
+EN61000-4-3:2006
+Radiated Immunity – Performance Criteria A
+Laser Safety
+23
+EN61000-4-4:2004
+Electrical Fast Transient Immunity – Performance Criteria B
+EN61000-4-5:2004
+Electrical Slow Transient Immunity – Performance Criteria B
+EN61000-4-6:2003
+Conducted RF Immunity – Performance Criteria A
+EN61000-4-11:2004
+Power Line Interruptions, Dips, and Dropouts – Performance 
+Criteria B
+Low Voltage Directive 73/23/EEC Tests per:
+EN61010-1:2001
+Safety Requirements Part 1: General Requirements
+MD – Machinery Directive for Laser Devices Tests per:
+EN60825-1:2001
+Safety of Laser Products – Part 1: Equipment Classification 
+Requirement and User’s Guide
+EN60825-2:2005
+Safety of Laser Products – Part 2: Safety of Optical Fiber 
+Communication Systems
+EN60825-12:2004
+Safety of Laser Products – Part 12: Safety of Free Space Optical 
+Communication Systems Used for Transmission of Information
+21CFR 1040.10
+1.4.3 CDRH Accession Numbers
+Table 1-2 lists CUBE part or item numbers, and their corresponding CDRH 
+accession number.  
+Table 1-2.  CUBE CDRH Accession Numbers
+PART/ITEM
+NUMBER
+ACCESSION
+NUMBER
+PART/ITEM
+NUMBER
+ACCESSION
+NUMBER
+1069408 0420530-043 1112774 0420530-043
+1069410 0420530-043 1116078 0420530-043
+1069413 0420530-043 1117004 0420530-043
+1069415 0420530-043 1118915 0420530-043
+1069416 0420530-043 1128264 0420530-043
+1069417 0420530-043 1130061 0420530-043
+1069418 0420530-043 1139603 0420530-043
+1094060 0420530-043 1139604 0420530-043
+1099208 0420530-043 1142279 0420530-043
+1106207 0420530-043 1149209 0420530-043
+CUBE Laser System Operator’s Manual
+24
+1.4.4 Safety and Compliance Labels
+The laser housing includes labels for safety and compliance, described in this 
+section.
+1.4.4.1 Safety Labels
+The location of the laser safety label for the CUBE laser system is shown in 
+Figure-1-4:  
+The label can be a Conforming or a Non-Conforming label, depending on usage: 
+Figure 1-3.  Laser Safety Labels on the CUBE Laser
+Figure 1-4.  Conforming and Non-Conforming Safety Labels
+Part Number  /  Revision
+Wavelength  /  Power
+Maximum Power
+Serial Number
+Date Manufactured
+LASER RADIATION
+AVOID EXPOSURE TO BEAM
+CLASS 3B LASER PRODUCT
+IEC 60825-1
+27650 SW 95th Avenue
+Wilsonville, Oregon 97070
+CLASS 3b PRODUCT COMPLIES
+WITH 21 CFR 1040.10 & 1040.11 EXCEPT
+FOR DEVIATIONS PURSUANT TO LASER
+NOTICE NO. 50, DATED JULY 26, 2001
+CLOSED                   OPEN
+SHUTTER
+LASER  APERTUREPart Number  /  Revision
+Wavelength  /  Power
+Maximum Power
+Serial Number
+Date Manufactured
+LASER RADIATION
+AVOID EXPOSURE TO BEAM
+CLASS 3B LASER PRODUCT
+IEC 60825-1
+27650 SW 95th Avenue
+Wilsonville, Oregon 97070
+OEM - CLASS IIIb PRODUCT
+DOES NOT COMPLY WITH
+CLOSED                   OPEN
+SHUTTER
+LASER  APERTURE
+CFR 1040.10 & 1040.11
+Conforming Label Nonconforming Label
+Laser Safety
+25
+1.5 Environmental Compliance
+This section describes compliance with various environmental regulatory 
+directives to identify hazardous substances. 
+1.5.1 EU REACH
+REACH (Registration, Evaluation, Authorization and Restriction of Chemicals) is 
+a European Union Commission (EUC) Regulation on chemicals and their safe 
+use (EC 1907/2006) entered into force on 01 June, 2007.
+Coherent products are “articles” as defined in REACH Article 3(3) and do not 
+release substances under their normal use. Suppliers of articles must provide 
+recipients with information on Substances of Very High Concern (SVHC) if those 
+are present above a concentration limit of 0.1% on an article level. It is the duty of 
+Coherent to communicate information about substances in articles, the delivered 
+product(s), based on Coherent’s knowledge, may contain the listed chemical 
+substance(s) included on the REACH Candidate List at this link:
+https://edge.coherent.com/assets/pdf/reach_article_33_statement.pdf
+The current Candidate List of SVHCs can be found on the ECHA website:
+https://echa.europa.eu/home
+Coherent will post information on SVHCs to our website as the information 
+becomes available and assures its customers that our products are in full 
+compliance the EU REACH requirement. For detailed information on SVHC and 
+Coherent products, see https://www.coherent.com/company/environmental.
+1.5.1.1 RoHS Compliance
+The European Union RoHS Directive EN 50581:2012 restricts the use of certain 
+hazardous substances in electrical and electronic equipment. Coherent is in 
+compliance with this Directive and can provide RoHS certification upon request.
+The European requirements for Electromagnetic Compliance (EMC) are specified 
+in the EMC Directive (published in 2014/30/EU).
+For Class B lasers:
+Conformance to the EMC requirements is achieved through compliance with the 
+harmonized standards EN55011:2009 for emission and ENC61000-6-2:2005 for 
+immunity. Compliance of this laser with the EMC requirements is certified by the 
+CE mark, displayed on the laser safety label.
+1.5.2 China RoHS Compliance
+This section details compliance with the China RoHS (Restriction of Hazardous 
+Substances) Regulation SJ/T 11364-2014. 
+This Regulation restricts the use of certain hazardous substances in electrical 
+and electronic equipment. The China RoHS Regulation applies to the production, 
+sale, and import of products into the Peoples Republic of China.
+CUBE Laser System Operator’s Manual
+26
+A label is attached to the laser housing or packaging to comply with the China 
+RoHS (Restriction of Hazardous Substances) Directive. This label lists potentially 
+hazardous substances that may be present in the CUBE laser system. An 
+example of the label for the CUBE laser system is shown in Figure-1-5.  
+The table shows that Lead (Pb) is present in the CUBE (due to the use of brass 
+material) and that the environmental-friendly use period is 20 years (as indicated 
+by the number “20” inside the circle).
+The China RoHS directive also requires that the date of manufacture be 
+displayed in Chinese characters on the product. This is accomplished on both the 
+conforming/nonconforming labels for the CUBE laser system, as in Figure-1-6:  
+1.5.2.1 Waste Electrical and El ectronic Equipment (WEEE, 2002)
+The European Union Waste Electrical and Electronic Equipment (WEEE) 
+Directive (2012/19/EU) is represented by a crossed-out garbage container label, 
+shown in Figure-1-7:  
+Figure 1-5.  China RoHS Table of Restricted Hazardous Substances
+Figure 1-6.  China RoHS Date of Manufacture
+Part Number  /  Revision
+Wavelength  /  Power
+Maximum Power
+Serial Number
+Date Manufactured
+LASER RADIATION
+AVOID EXPOSURE TO BEAM
+CLASS 3B LASER PRODUCT
+IEC 60825-1
+27650 SW 95th Avenue
+Wilsonville, Oregon 97070
+CLASS 3b PRODUCT COMPLIES
+WITH 21 CFR 1040.10 & 1040.11 EXCEPT
+FOR DEVIATIONS PURSUANT TO LASER
+NOTICE NO. 50, DATED JULY 26, 2001
+CLOSED                   OPEN
+SHUTTER
+LASER  APERTURE
+Date Manufactured
+Conforming Label Nonconforming Label
+Part Number  /  Revision
+Wavelength  /  Power
+Maximum Power
+Serial Number
+Date Manufactured
+LASER RADIATION
+AVOID EXPOSURE TO BEAM
+CLASS 3B LASER PRODUCT
+IEC 60825-1
+27650 SW 95th Avenue
+Wilsonville, Oregon 97070
+OEM - CLASS IIIb PRODUCT
+DOES NOT COMPLY WITH
+CLOSED                   OPEN
+SHUTTER
+LASER  APERTURE
+CFR 1040.10 & 1040.11
+Date Manufactured
+Figure 1-7.  Waste Electrical and Electronic Equipment Label
+
+Laser Safety
+27
+The purpose of this directive is to minimize the disposal of WEEE as unsorted 
+municipal waste and to facilitate its separate collection. This crossed-out garbage 
+container label is affixed to the cover of the CUBE.
+The WEEE Directive applies to this product and any peripherals marked with this 
+symbol. Do not dispose of these products as unsorted municipal waste. Contract 
+the local distributor for procedures for recycling this equipment.
+1.6 Sources of Additional Information
+The following are sources for additional information on laser safety standards and 
+safety equipment and training.
+1.6.1 Laser Safety Standard
+American National Standard for Safe Use of Lasers
+ANSI Z136 Series
+American National Standards Institute (ANSI)
+www.ansi.org
+Performance standards for light-emitting products
+21 CFR Title 21 Chapter 1, Subchapter J, Part 1040
+U.S. Food and Drug Administration
+www.fda.gov
+1.6.2 Publications and Guidelines
+Safety of laser products - Part 1: Equipment classification and requirements
+IEC 60825-1
+Safety of laser products - Part 14: A user’s guide
+IEC 60825-1
+Safety Requirements For Electrical Equipment For Measurement, Control and 
+Laboratory Use
+IEC 61010-1 / EN 61010-1
+International Electrotechnical Commission (IEC)
+www.iec.ch
+Safety of laser products - Part 1: Equipment classification and requirements
+BS EN 60825-1
+British Standard Institute
+www.bsigroup.com
+A Guide for Control of Laser Hazards
+American Conference of Governmental
+and Industrial Hygienists (ACGIH)
+www.acgih.org
+Laser Safety Guide
+Laser Institute of America
+www.lia.org
+CUBE Laser System Operator’s Manual
+28
+1.6.3 Equipment and Training
+Coherent Web Site
+Laser Safety Page, Laser Safety Awareness Training Video
+www.coherent.com
+Laser Focus Buyer’s Guide
+Laser Focus World
+www.laserfocusworld.com
+Photonics Spectra Buyer’s Guide
+Photonics Spectra
+www.photonics.com
+29
+2C U B E  P RODUCT INTRODUCTION
+This section describes the CUBE Laser System, lists features, describes each 
+component in the system, and provides specifications and dimensions for the 
+components of the system. 
+For installation instructions, see “Set Up and Installation” (p. 53). That section 
+describes installation of a complete CUBE laser system.
+For the various modes of operation, see “Operations” (p. 67).
+Additional information is provided later in this book about computer control and 
+commands, setting advanced features, using remote communications, and 
+troubleshooting.
+2.1 Features of the CUBE Laser System
+The features of the CUBE Laser System include:
+• Single transverse mode
+• Thermoelectrically-cooled for extended life
+• Compact package
+• High-quality glass optics
+• Digital modulation control
+• Analog modulation control 
+• Circular or elliptical beams
+• RS-232 and USB remote communication
+• Coherent CUBE Connection software
+• Shutter
+• Control Box
+• Heat Sink (optional)
+2.2 System Description
+The CUBE laser system combines the very latest semiconductor laser technology 
+with proven high-quality diode laser system manufacturing techniques. This laser 
+system is the most advanced compact full-feature laser system on the market 
+today.
+The CUBE laser system, shown in Figure-2-1, is a complete system with laser 
+head, control box, power supply, and interface cables;. This system can be 
+mounted to an optical table or breadboard with the appropriate heat sink 
+capability. The CUBE laser system delivers power, stability, and performance in a 
+small package and at an attractive price.  
+CUBE Laser System Operator’s Manual
+30
+Table 2-1 lists the components shipped with a complete CUBE laser system:  
+The M4 screws and washers to mount the CUBE laser system are also included 
+in the shipment, along with a Hex wrench.
+In addition, the optional accessories listed in Table 2-2 to can be ordered for the 
+CUBE laser system.
+ 
+Figure 2-1.  CUBE Laser System
+Table 2-1.  Components of a CUBE Laser System
+# P/N COMPONENT
+1 Varies CUBE Laser Head
+2 1039966 CUBE Control Box
+3 1072454 CUBE Power Supply, 6 VDC, 2.5A, Switched
+4 1108063 Power Cord
+5 1072166 CUBE Interface Cable (Quatro Digital Interface from the 
+CUBE laser to the control box, I/O, RS-232, and power)
+1108906 USB Cable (see Figure-2-10)
+1147585 CUBE Quick Start Guide 
+1079890 CD-ROM with CUBE Operator’s Manual and Coherent 
+CUBE Connection Software
+
+Product Introduction
+31
+2.2.1 CUBE Laser Head
+The CUBE laser head is a direct-diode laser.  
+The output beam of the diode is collimated by a high-aperture lens. Additionally, 
+the beam is formed by a prism pair to achieve a round beam in the far field.
+A thermoelectric cooler is integrated for stabilizing the diode laser. Excess heat is 
+removed via the base plate of the laser.
+The construction details of the CUBE laser head are shown schematically in 
+Figure-2-3. The dimensions of the CUBE laser head are listed in “Dimensions: 
+CUBE Laser Head” (p. 47).  
+Table 2-2.  Accessories for a CUBE Laser System
+P/N COMPONENT
+1073840 CUBE Heat Sink with Fan
+1116779 CUBE Right-Angle Heat Sink Mount
+1079150 CUBE Secondary Emission Indicator Lamp
+1040408 Non-Shorted RCA Plug
+1103937 CUBE I/O Interface Cable, 8-Pin to Flying Leads 
+NOTE: This cable is not included with the laser system and must be 
+ordered separately. This optional I/O cable connects to the CUBE 
+Interface Cable (Quatro Digital Interface, P/N 1072166.)
+1415602 High-Speed USB-to-Serial RS-232 Adapter
+1080090 Cable Extension to Extend Control Box or 
+RS-232 M-F, DB-9 Cable
+Figure 2-2.  CUBE Laser Head
+
+CUBE Laser System Operator’s Manual
+32
+2.2.2 CUBE Control Box
+When properly installed and operated, the CUBE Control Box allows the Class 
+IIIb (CDRH)/Class 3B (IEC) laser system to conform to CDRH 21 CFR 1040 and 
+IEC60825-1 requirements for a “conforming” system. The system is tested and 
+certified at the factory to ensure that all of the safety features are operational. 
+Bypassing or otherwise disabling these safety features invalidate the conformity 
+to the CDRH and IEC regulations.
+The CUBE Control Box, shown in Figure-2-4, is connected to the laser interlock. 
+The keyswitch initiates or interrupt laser emission in the same fashion as the 
+interlock.  
+Figure 2-3.  CUBE Laser Head Schematic
+Temperature-Controlled Plate 
+Power 
+Supply
+I/O 
+Connector
+Control Box 
+Analog Input 
+Interlock
+RS-232 
+Input
+USB 
+Input
+Digital Input 
+SMB
+Thermal 
+Controller
+Digital 
+Interface
+Laser 
+Diode 
+Driver
+Laser
+Circular 
+Beam 
+Prisms
+Photodiode
+Shu/g425er
+Figure 2-4.  CUBE Control Box with Keyswitch
+
+Product Introduction
+33
+The BNC connector provides access to the power control line for laser power 
+control at analog modulation rates. Use the RCA rear connector in series with an 
+external interlock.
+Figure-2-5 shows the connectors at the bottom end of the CUBE Control Box.
+• The Modulation connector is used for analog modulation.
+• The LED indicator shows that the system is active and the interlock is closed.
+• The keyswitch turns the laser ON or OFF. There is a 5-second delay at 
+power ON. 
+Figure-2-6 shows the connectors on the back panel of the CUBE Control Box.
+• The 9-pin connector that attaches the CUBE Interface Cable to the Control Box
+• The Interlock RCA jack  
+2.2.2.1 Interface Cable
+The CUBE laser system includes a full-function interface cable, shown in 
+Figure-2-7, which can access all functions available in the Coherent CUBE 
+system.  
+This CUBE Interface Cable (Quatro Digital Interface) is included with the CUBE 
+laser system at no extra charge. This cable provides separate connectors from 
+the CUBE laser to the control box, I/O, RS-232, and power.
+Figure 2-5.  Control Box Front Panel View
+Figure 2-6.  Control Box Back Panel View
+
+CUBE Laser System Operator’s Manual
+34
+The CUBE Interface Cable connects to the optional CUBE I/O Cable, 8-Pin to 
+Flying Leads (P/N 1103937), which is not included with the laser system and 
+which must be ordered separately.)
+Figure-2-8 shows the signals for the interface cable.  
+Figure 2-7.  Interface Cable
+418 mm
+[16.5 in.]
+Figure 2-8.  Interface Cable Description
+VIO
+BRN
+ORN
+Product Introduction
+35
+Table 2-3 lists the pin-outs for the interface cable.  
+Table 2-3.  Interface Cable Pin-Outs
+PIN # FUNCTION DIRECTION DESCRIPTION DRIVE/LOAD
+1 Interlock Input 0 = Open, Ground (normal)
+1 = Closed, TTL High
+7 K ohm internally 
+pulled down
+2 Laser On (Enable) Input 0 = Laser Off
+1 = Laser On, TTL High
+7 K ohm internally 
+pulled up
+3 Manual Mode Input 0 = Computer Control
+1 = Manual mode, + 5 VDC 
+(normal)
+7 K ohm internally 
+pulled up
+4 RS-232 Receive Output DE-9 Pin 3 Standard
+5 RS-232 Transmit Output DE-9 Pin 2 Standard
+6 Signal Ground (For use with all 
+signal inputs except the analog 
+modulation)
+Input DE-9 Pin 5 Ground
+7 General Fault Output 0 = No Faults
+1 = Fault condition, +5 VDC
+7Ko h m
+8 Analog Modulation Input 0 to + 5 VDC = Threshold – 100% 
+Power Control
+2Ko h m
+9 + 5 VDC Output Output Reference Output, + 5.0 VDC 100 mA Maximum 
+Drive
+10 Analog Modulation Ground Output Ground Ground
+11 Power Supply Input + 6 VDC Input 4.8 V to 6.5 VDC Power Input 2.5 A
+12 Over-Temperature Heat sink Output 0 VDC = Base plate Temperature 
+less than 40ºC
++ 2.5 VDC = Base plate 
+Temperature between 40 and 
+50°C
++ 5 VDC = Base plate 
+Temperature over 50°C
+2Ko h m
+13 Power Supply Ground Input Ground Ground
+14 Laser Power Out Output 0 to + 2 VDC = 0 to 100% Laser 
+Power
+750 ohm
+15 Laser Ready Output 0 = Laser Not Ready
+1 = Laser Ready, + 5 VDC
+2Ko h m
+Shell Chassis Ground Ground Ground
+CUBE Laser System Operator’s Manual
+36
+2.2.2.2 Interlock
+The control box can be connected to a remote switch to disable the system (in the 
+event that a door or panel is opened). The interlock switch must be wired in series 
+with the interlock RCA connector:
+INTERLOCK:
+Open = Laser OFF
+Closed = Laser ON
+When the interlock is returned to the closed position, a 5-second delay occurs 
+before laser emission.
+Table 2-4 lists specifications for the Interlock: 
+NOTICE!
+The interlock is a fused + 5 VDC line. Do not ground the interlock or apply 
+any outside power to the circuit.
+2.2.3 Connectors on  the Laser Head
+Figure-2-9 shows the connectors on the CUBE laser:  
+Table 2-4.  Interlock Specifications
+SYSTEM SPECIFICATIONS VALUE
+Interlock Control Input
+Maximum Bandwidth
+Rise and Fall Time (10% to 90%)
+Modulation Depth
+Input Impedance
+7H z
+< 1 µsec
+Infinity, Complete On/Off
+7000 ohms
+Figure 2-9.  Connectors on the CUBE Laser Head
+USB
+DE-15 Input/Output Connector
+SMB 
+Product Introduction
+37
+These include:
+• SMB Digital Modulation Input
+• DE-15 Input / Output Connector
+• USB Connector
+Each of these are described in the subsections that follow.
+2.2.3.1 SMB Digital Modulation Input
+Table 2-5 lists specifications for the SMB Digital Modulation Input:  
+• 50 ohm Input Impedance 
+• V Input Low < 0.8 V
+• V Input High > 2.6 V
+• Maximum Modulation Frequency 
+Refer to the CUBE Data Sheet for specifications applicable to each model.
+2.2.3.2 DE-15 Input / Output Connector
+Recommendations:
+• Norcomp 979-009-020-121
+• Norcomp 180-015-272-000
+2.2.3.3 USB Connection
+The CUBE USB cable, shown in Figure-2-10, is shipped with the CUBE laser 
+system.  
+Table 2-5.  SMB Digital Modulation Input
+SYSTEM SPECIFICATIONS VALUE
+Maximum Bandwidth 150 MHz
+Except for CUBE 445nm and 488nm lasers 125 MHz
+Rise and Fall Time (10% to 90%)  <2n s e c
+Except for the CUBE 445nm laser Fall Time is < 3 nsec with 125 MHz 
+Maximum Bandwidth
+Modulation Depth (extinction ratio)
+At 0 Hz > 1,000,000:1 (106:1)
+At 150 MHz > 250:1
+Figure 2-10.  USB Cable
+
+CUBE Laser System Operator’s Manual
+38
+. The CUBE bandwidth provides:
+• Standard Mini-USB connection
+• USB 1.1 or 2.0 communication speed
+IMPORTANT!
+A USB connection is compatible ONLY with older 32-bit operating systems 
+and IS NOT valid to interface with Windows 7 (64-bit) or Windows 10 
+operating systems. 
+All RS-232 commands and queries are available via a USB connection to the host 
+computer. This connection is made using the High-Speed USB-to-Serial RS-232 
+Adapter (P/N 1415602), sold separately. See details in the section, “Computer 
+Control” (p. 95).
+2.2.4 CUBE Power Supply and Power Cord
+The CUBE laser system includes a Power Supply (P/N 1072454), which has a 
+power switch and Power On LED indicator. The Power Cord (P/N 1108063) is 
+also included with the CUBE laser system, shown at the top of Figure-2-11.  
+The power supply requirements for the CUBE laser are:
+4.8 VDC to 6.5 VDC 2.5 A
+Table 2-6 lists the Power Supply Specifications for both input and output:  
+Figure 2-11.  CUBE Power Supply
+
+Product Introduction
+39
+2.2.5 Coherent CUBE Connection Software
+Each CUBE laser system includes Coherent CUBE Connection software for laser 
+control in a graphical user interface (GUI) environment to a host computer.  
+For installation instructions and a description of the user interface, see “Computer 
+Control” (p. 95). Any required drivers for the CUBE laser are installed 
+automatically during by the CUBE Connection software.
+2.3 Accessories for CUBE Lasers
+Table 2-7 lists accessories available for the CUBE laser system:  
+Table 2-6.  Power Supply Specifications
+INPUT OUTPUT
+Input Voltage: 90 to 264 VAC
+Input Current: < 0.5 A at 90 VAC input
+Input Frequency: 47 to 63 Hz
+Output Voltage: 6 VDC
+Output Current: 2.5 A
+Rated Output Power: 15 W (max.)
+Output Regulation: ± 5% 
+Line Voltage Regulation: ± 1% Typical Measured 
+at Full Load
+Figure 2-12.  Software CD
+Table 2-7.  Accessories for a CUBE Laser System
+P/N COMPONENT
+1073840 CUBE Heat Sink with Fan
+1116779 CUBE Right-Angle Heat Sink Mount
+1415602 CUBE High-Speed USB-to-Serial RS-232 Adapter
+1079150 CUBE Secondary Emission Lamp
+1040408 Non-Shorted RCA Plug
+1103937 CUBE I/O Cable, 8-pin to Flying Leads 
+1080090 Cable Extension to Extend Control Box or 
+RS-232 M-F, DB-9 Cable
+CUBE Laser System Operator’s Manual
+40
+2.3.1 CUBE Heat Sink (Optional)
+The mounting of any laser is important to extend the stability of the beam over 
+time and temperature, and the heat sink provides proper thermal dissipation and 
+mechanical positioning. 
+The optional CUBE Heat Sink from Coherent (P/N 1073840) is the result of 
+significant design research and testing. The optional heat sink is available to 
+ensure optimal heat sinking of the CUBE laser head, if not covered by OEM 
+integration.
+With the Coherent CUBE Heat Sink, shown in Figure-2-13, the safety shutter is 
+easily accessible and the rear panel is unobstructed for access and connections. 
+NOTE:
+This optional Coherent accessory is not required if the heat sink function is 
+covered by OEM integration.
+The optional CUBE Heat Sink accessory has sufficient cooling capacity for 
+ambient temperatures to cool to a maximum ambient temperature of 50°C. The 
+solid CUBE Heat Sink foundation is designed to maintain the specified system 
+pointing stability.
+The CUBE Heat Sink includes a fan that connects directly to the power supply, 
+which is included with each system. English and metric mounting hardware is 
+also included. See “Mount the Laser Head” (p. 54) for installation instructions.
+2.3.1.1 Features of th e CUBE Heat Sink
+• 64 mm (2.5 in.) beam height
+• Output beam centers on standard table 2.54 cm (1 in.) bolt pattern
+• Metric and English bolt pattern
+• Precision dowel pin laser positioning
+• Integrated cooling fan
+• Proven stable performance over time and temperature
+Figure 2-13.  CUBE Heat Sink (Optional)
+
+Product Introduction
+41
+• Safety shutter access
+• Small footprint
+• Rugged design
+2.3.1.2 Packing List fo r the CUBE Heat Sink
+The CUBE Heat Sink Accessory Kit is shown in Figure-2-14:  
+Table 2-8 lists the parts and accessories included with the CUBE Laser System:  
+2.3.2 Heat Sink Specifications
+It is imperative that the laser head be adequately heat sinked; otherwise, it will 
+overheat and shut down. The Heat Sink Flatness requirement is < 0.05 mm over 
+the entire mounting surface.
+Figure 2-14.  CUBE Heat Sink Accessory Kit
+Table 2-8.  Packing List for the CUBE Heat Sink Accessory
+ITEM DESCRIPTION QUANTITY
+Heat Sink 1
+Fan Power Connector 1
+1/4-20 Mounting Hardware 4
+M6 Mounting Hardware 4
+M4 Laser Mounting Hardware 4
+Non-Metallic Flat Washers 4
+3/16 Wrench 1
+M6 Wrench 1
+
+CUBE Laser System Operator’s Manual
+42
+NOTE: 
+Heat dissipation varies with laser power levels.
+Figure-2-15 shows the heat dissipation of the CUBE laser head for a given base 
+plate temperature.  
+The graph in Figure 2-16 (p. 2-42) allows determination of the heat sink thermal 
+impedance requirement, based on the anticipated maximum ambient temperature 
+of 40ºC. For example, if the maximum expected ambient temperature is 35°C, the 
+heat sink thermal impedance needs to be 2.7ºC/Watt.  
+Figure 2-15.  Thermal Dissipation of the CUBE Laser Head
+Figure 2-16.  Estimated Heat Sink Requirements for an Ambient Temperature of 50ºC
+
+Product Introduction
+43
+If additional thermal conduction is required, the only recommended thermal 
+conductance aids are pyrolytic graphite pads or thermal materials, such as 
+Sil-Pad or Indium foil. Thermal compound or any flowable compound is not 
+recommended.
+IMPORTANT!
+The use of flowable thermal compounds can reduce the normal lifetime of a 
+laser and will void the CUBE laser warranty.
+The mounting surface of the heat sink must be flat to ensure good thermal 
+contact and avoid damage to the laser head. Many extruded heat sinks are 
+warped and the mounting surface should be milled flat (within < 0.05 mm over the 
+mounting surface).
+2.3.3 CUBE Right-Angle Heat Sink Mount
+The optional CUBE Right-Angle Heat Sink Mount (P/N 1116779) for the CUBE 
+laser is available for applications that require the direction of the beam 
+polarization to be rotated ninety degrees. The Right-Angle brackets act as a Heat 
+Sink when mounting the CUBE laser.
+The most common use of the CUBE Right-Angle Heat Sink Mount is to change 
+the CUBE polarization from vertical to horizontal. The Right-Angle Heat Sink 
+Mount allows the CUBE laser to be rotated 90º without a change in beam position 
+(if mounted as shown in Figure-2-17).  
+2.3.3.1 Features of the CUBE Right-Angle Heat Sink Mount
+The features of the CUBE Right-Angle Heat Sink Mount include:
+• 19 mm (.75 in.) beam height is maintained
+• CUBE laser mounting bolt pattern
+• Heat sink included for heat dissipation 
+• Proven pointing performance over temperature and time
+• Safety shutter access
+• Small footprint
+• Rugged design
+Figure 2-17.  Right-Angle Heat Sink Mount with CUBE Laser
+
+CUBE Laser System Operator’s Manual
+44
+2.3.3.2 Packing List for the CUBE  Right-Angle Heat Sink Mount
+Figure-2-18 shows the CUBE Right-Angle Heat Sink Mount kit. This includes 
+mounting hardware (both tools and screws) for both standard and metric 
+mounting.  
+For installation instructions, see “Mount on a Right-Angle Heat Sink Mount 
+(Optional)” (p. 56).
+For dimensions, see “Dimensions: CUBE Right-Angle Heat Sink Mount” (p. 50).
+Table 2-9 lists the items included with the CUBE Right-Angle Heat Sink Mount:  
+2.3.4 CUBE I/O Interface Cable
+The mating CUBE I/O Interface Cable, 8-pin to Flying Lead (P/N 1103937), is 
+sold separately. This eight-pin I/O connector, shown in Figure-2-19, is provided 
+for access to the laser control and status pins.  
+Figure 2-18.   Right-Angle Heat Sink Mount (Optional)
+Table 2-9.  Packing List for Right-Angle Heat Sink Mount
+ITEM DESCRIPTION QUANTITY
+Right-Angle Heat Sink Mount 1
+M4 x 16 mm Long Mounting Hardware 4
+M4 Small Pattern Washers 4
+Wrench, Hex key, 3 mm 1
+Wrench, Hex key, 2.5 mm 1
+Instruction Sheet, CUBE laser Right Angle 
+Mount and Heat Sink (P/N 1144556)
+1
+
+Product Introduction
+45
+Use Table 2-10 to determine the functions required for your application.  
+Figure 2-19.  CUBE I/O Interface Cable
+Table 2-10.  CUBE I/O Interface Cable
+PIN COLOR FUNCTION DIRECTI
+ON RANGE DESCRIPTION
+1 Red Manual
+Mode
+Input TTL - 0, TTL - 1 Default + 5 V for Manual mode (Auto-Start). 
+Connect to ground for computer-start mode.
+2 Black Ground Input N/A Ground
+3 Orange Laser 
+On/Enable
+Input TTL - 0, TTL - 1 Default + 5 V for Laser is Enabled.
+Connect to ground to disable laser output.
+4 Brown General Fault Output N/A Default: zero volts for no faults.
+Output + 5 V if a fault condition exists. 
+Example: Base plate over-temperature
+5 Green 2nd
+Emission
+Lamp
+Output TTL - 0, TTL - 1 Default: zero volts for interlock open and laser 
+off. 
+Output 5 V when laser enabled. Second 
+emission lamp accessory sold separately
+6 Blue Heat Sink 
+Temperature
+Output 0V ,  2 . 5V ,  5V Laser Base Plate Temperature output signal
+• 0  VDC = Temperature less than 40°C
+• + 2.5 VDC = Temperature between 40°C 
+and 50°C
+• + 5  VDC = Temperature over 50°C
+7 Yellow Laser Power 
+Output
+Output 0 to 2 V Laser Power output signal. Voltage 
+proportional to laser power. Zero to + 2 V 
+represents zero to 100% Laser Output Power
+8 White Laser Ready Output TTL - 0, TTL - 1 Default: Zero volts - laser not ready.
+Output + 5 V when the laser is ready.
+CUBE Laser System Operator’s Manual
+46
+2.4 Operating Specifications
+Table 2-11 lists the operating specifications for the CUBE Laser System.  
+Table 2-12 lists the recommended storage temperature for CUBE lasers:  
+For current information, refer to the CUBE data sheet on the Coherent website at 
+https://www.coherent.com/lasers/laser/cube-lasers
+2.4.1 Temperature and Humidity
+The CUBE laser system includes an active thermoelectric cooler to maintain the 
+diode and optics at 22°C.
+The humidity and ambient temperature around the laser needs to be considered 
+to prevent condensation on the diode and optics. The diode set temperature is 
+22ºC.
+CAUTION!
+Dew points above 22ºC (shaded in pale blue) might cause condensation.
+Table 2-13 contains boxes representing the dew point numbers.
+ 
+Table 2-11.  Operating Specifications
+OPERATING CONDITION VALUE
+Laser Head Operating Voltage +4.8 to 6.5 VDC
+Laser Head Operating Current <2.5 Amps
+Baseplate Temperature Range
+(Non-condensing with laser diode TEC at 
+set point of 22°C.)
++10° to 50°C (50° to 122°F) 
+Maximum Heat Dissipation of Head (W) 
+(baseplate at 50°C)
+13° W
+Storage Temperature –20° to 60°C (–4° to 140°F)
+Table 2-12.  Storage Specifications
+STORAGE CONDITION VALUE
+Storage Temperature –20° to 60°C (–4° to 140°F)
+Product Introduction
+47
+2.5 Dimensions
+This section provides dimensions for the following components:
+• CUBE Laser Head
+• CUBE Control Box
+• CUBE Power Supply
+• CUBE Heat Sink (optional)
+• CUBE Right-Angle Heat Sink Mount (optional)
+2.5.1 Dimensions: CUBE Laser Head
+Figure-2-20 shows the dimensions for the CUBE laser head.  
+Table 2-13.  Safe Operating Humidity Levels
+AIR 
+TEMP 
+ºC 
+%R ELATIVE HUMIDITY
+100 95 90 85 80 75 70 65 60 55 50 45 40 35 30 25 20 15 10
+41 41 39 38 37 36 35 34 33 32 29 28 27 24 22 19 17 13 8 3
+38 38 37 36 35 34 33 32 30 29 27 26 24 22 19 17 14 11 7 0
+35 35 34 33 32 31 30 29 27 26 24 23 21 19 17 15 12 9 4 0
+32 32 31 31 29 28 27 26 24 23 22 20 18 17 15 12 9 6 2 0
+29 29 28 27 27 26 24 23 22 21 19 18 16 14 12 10 7 3 0
+27 27 26 25 24 23 22 21 19 18 17 15 13 12 10 7 4 2 0
+24 24 23 22 21 20 19 18 17 16 14 13 11 9 7 5 2 0
+21 21 20 19 18 17 16 15 14 13 12 10 8 7 4 3 0
+Figure 2-20.  Dimensions — CUBE Laser Head
+
+CUBE Laser System Operator’s Manual
+48
+Dimensions for the front and back ends of the laser are shown in Figure-2-21, 
+along with connectors and the laser aperture:  
+2.5.2 Dimensions: CUBE Control Box
+Figure-2-22 shows the dimensions for the control box to the CUBE laser system. 
+Notice that the green LED emission indicator shows that system is active and the 
+interlock is closed.  
+Figure 2-21.  Dimensions — CUBE Laser Head End Views
+Figure 2-22.  Dimensions — CUBE Control Box
+
+Product Introduction
+49
+2.5.3 Dimensions: CUBE Power Supply 
+Figure-2-23 shows the dimensions for the power supply to the CUBE laser 
+system.  
+2.5.4 Dimensions: CUBE Optional Heat Sink 
+Figure-2-24 shows the dimensions for the optional Coherent Heat Sink for the 
+CUBE laser head.  
+Figure 2-23.  Dimensions — CUBE Power Supply
+Figure 2-24.  Dimensions — Optional CUBE Heat Sink
+
+CUBE Laser System Operator’s Manual
+50
+Figure-2-25 shows the mounting holes on the optional Heat Sink:  
+NOTICE!
+Mounting holes on the Coherent Heat Sink can be used to mount the heat 
+sink onto either standard or metric holes on optical or breadboard patterns.
+2.5.5 Dimensions: CUBE Righ t-Angle Heat Sink Mount
+Figure-2-26 shows dimensions for the optional CUBE Right-Angle Heat Sink 
+Mount for the CUBE laser.  
+Figure 2-25.  Mounting Holes — Optional CUBE Heat Sink
+
+Product Introduction
+51
+Figure 2-26.  Dimensions: Right-Angle Heat Sink Mount
+CUBE Laser System Operator’s Manual
+52
+53
+3S ET UP AND INSTALLATION
+This section describes how to set up and install a CUBE laser system, including 
+how to mount the laser, attach power, connect various cables, and so on.
+CAUTION! 
+The CUBE Laser System is a Class IIIb laser product. Depending on the 
+specific laser model, the laser will emit either VISIBLE OR INVISIBLE LASER 
+RADIATION of 375–730 nm wavelengths from the aperture in the front of the 
+laser head. 
+Read the safety information and precautions in “Laser Safety & Compliance” 
+(p. 13) prior to installation.
+3.1 Receiving and Inspection
+Before you begin, gather all components and tools to be used. Also inspect the 
+product that was received before starting installation and set-up.
+Inspect shipping boxes for signs of rough handling or damage and indicate any 
+such signs on the bill of loading. Report any damage immediately to the shipping 
+carrier and to Coherent Order Administration Department at +1-(800)-367-7890 
+(outside the US: +1-(408)-764-4557, or to an authorized Coherent representative.
+NOTICE!
+After unpacking the system, save the shipping boxes for later potential 
+shipments—refer to “Service & Support” (p. 121) for shipping instructions.
+Table 3-1 lists the items shipped with a CUBE Laser System:  
+Table 3-1.  Packing List for CUBE Laser System
+P/N COMPONENT QTY
+Varies CUBE Laser Head 1
+1039966 CUBE Control Box 1
+1072454 CUBE Power Supply, 6 VDC, 2.5A, Switched 1
+1108063 Power Cord, North America 1
+1072166 CUBE Interface Cable (Quatro Digital Interface included at no 
+extra charge that provides an interface from the CUBE laser to 
+the control box, I/O, RS-232, and power)
+1
+1108906 USB Cable 1
+1147585 CUBE Quick Start Guide 1
+1079890 CD-ROM with CUBE Operator’s Manual and Coherent CUBE 
+Connection Software
+1
+Included Modified M4 Mounting Screws (4 each),
+M4 Small Pattern Washer (4 each), and 
+small 
+Hex wrench (1 each)
+CUBE Laser System Operator’s Manual
+54
+3.2 Installation Steps
+The steps required for installation vary, depending on whether or not you want 
+computer control of the laser. For information about set-up for computer control, 
+see “Computer Control” (p. 95). This section summarizes the steps to install the 
+CUBE laser system.
+NOTICE!
+Take appropriate ESD precautions when handling and installing the laser. 
+Refer to “Electrical Safety” (p. 18) for a complete description of precautions.
+For a typical installation of the CUBE laser system:
+1. Mount the CUBE laser on either the opt ional CUBE Heat Sink, the Right-Angle 
+Heat Sink Mount, or a mounting surface capable of providing adequate thermal 
+dissipation. For requirements, see “CUBE Heat Sink (Optional)” (p. 40).
+2. Connect the Interface cable to the laser head.
+3. Connect the Control Box to the interface cable. Ensure the keyswitch is in the 
+OFF position.
+4. Connect the power supply.
+5. Turn power ON.
+6. Turn the keyswitch on the control box to  the ON position.Laser emission starts 
+in approximately 5 seconds.
+7. Move the laser shutter to the OPEN position, as indicated on the label at the 
+top of the laser head.
+3.3 Mount the Laser Head
+Installation options include:
+• Install the CUBE laser head onto an OEM heat sink mount that meets the 
+flatness requirements for thermal management of the CUBE laser system.
+• Mount the CUBE laser head with the Cohe rent CUBE Heat Sink directly to an 
+optical table or breadboard.
+NOTE:
+The CUBE Heat Sink from Coherent is an optional accessory that is not 
+provided with the laser system and must be ordered separately.
+Depending on the space available and desired position of the laser in a 
+customer-designed installation, another mounting alternative is to attach the 
+CUBE laser using the Coherent Right-Angle Heat Sink Mount.
+Each of these installation options are described in the sections that follow.
+Set Up and Installation
+55
+3.3.1 Mount on the CUBE Heat Sink (Optional Accessory)
+To mount the CUBE laser head with the optional CUBE Heat Sink from Coherent 
+to an optical table or breadboard, follow the mounting procedure described in this 
+section. Instructions are provided for connections required for various modes of 
+operation.
+NOTICE!
+The mounting surface of the Heat Sink must be flat to ensure good thermal 
+contact and avoid damage to the laser head. Many extruded Heat Sinks are 
+warped and the mounting surface should be milled flat (within < 0.05 mm 
+over the mounting surface).
+1. Place the CUBE laser on either the optional CUBE Heat Sink or a mounting 
+surface capable of providing adequate thermal dissipation. Direct contact 
+between laser and heat sink is recommended.
+If additional thermal conduction is required, the only recommended thermal 
+conductance aids are pyrolytic graphite pads or thermal materials, such as 
+Sil-Pad or Indium foil. Thermal compound or any flowable compound is not 
+recommended. Refer to “CUBE Heat Sink (Optional)” (p. 40) for Heat Sink 
+requirements.
+NOTICE!
+The use of flowable thermal compounds can reduce the normal lifetime of a 
+laser and will void the CUBE laser warranty. 
+2. Secure the Coherent Heat Sink (P/N 107 3840) to the proposed laser location. 
+Ensure the ends of the Heat Sink remain unobstructed for proper air flow.
+Secure the CUBE laser head to the Heat Sink with the M4 screws shipped with 
+the system (M4 x 10 mm with small pattern washer). 
+NOTICE!
+The laser system includes modified M4 mounting hardware. Standard M4 
+socket head screws do not provide sufficient clearance for mounting holes.
+3. Tighten the screws in a diagonal patter n to ensure optimum pointing stability. 
+Torque the mounting screws to 23 N·m (32 oz·in.) in the sequence of 1-2-3-4, 
+shown in Figure-3-1. 
+4. Use the same diagonal pattern for the fi nal torque setting of 1 N·m (142 oz·in.)
+5. If fan operation is required, connect the fan to the CUBE power supply with the 
+cable provided with the Heat Sink. The fan cable will allow power to be supplied 
+to the Heat Sink fan and the CUBE simultaneously.
+6. Proceed with normal laser operation.
+CUBE Laser System Operator’s Manual
+56
+3.3.2 Mount on a Right-Angle Heat Sink Mount (Optional)
+As an alternative to using the optional CUBE Heat Sink from Coherent, instead 
+attach the CUBE laser to a Right-Angle Heat Sink Mount. The mounting diagram 
+is shown in Figure-3-2.  
+Figure 3-1.  Torque and Tightening Pattern (CUBE Laser to Heat Sink)
+/g110
+/g111/g112
+/g113
+Figure 3-2.  Right-Angle Heat Sink Mount Mounting Diagram
+
+Set Up and Installation
+57
+1. Attach the CUBE laser to the Right-Angle Heat Sink Mount using the provided 
+four small pattern flat washers and modified M4 socket head cap screws. 
+Mount the CUBE laser to the Right-Angle Heat Sink Mount as shown in 
+Figure-3-2:  
+2. Torque the screws to 36 inch ounces in the same diagonal pattern shown 
+earlier in Figure-3-1.
+3.3.3 Connect the Interface Cable to the Laser
+Connect the serial interface cable (with the DE-15 pin connector) to the CUBE 
+laser, as shown in Figure-3-4.  
+Tighten the connector shell screws to ensure reliable system operation.
+Figure 3-3.  Tighten Mounting Screws
+Figure 3-4.  Connect the Serial Interface Cable to the Laser
+
+CUBE Laser System Operator’s Manual
+58
+3.3.4 Connect Power
+The power cable 2-pin connector mates to the supplied CUBE power supply. The 
+connector is keyed to ensure correct polarity when plugged into the power supply.
+CAUTION!
+Failure to connect the power cable 2-pin connector correctly may cause 
+internal damage and will void the warranty.
+1. Connect the power supply.
+• Use care to connect the tabbed ends in the correct alignment, as shown in 
+Figure-3-5.  
+• Figure-3-6 shows the WRONG way to connect the power cable. 
+Figure 3-5.  Correct Way to Connect 2-Pin Power Cable
+Figure 3-6.  Wrong Way to Connect 2-Pin Power Cable
+CORRECT
+Pin 2
+(Ground)
+Pin 1
+(+6V)
+Tab
+Lock
+WRONG

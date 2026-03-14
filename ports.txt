@@ -1,0 +1,30 @@
+Port: COM5
+Desc: Standard Serial over Bluetooth link (COM5)
+HWID: BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_LOCALMFG&0000\7&8AD76E4&0&000000000000_00000000
+Mfg: Microsoft
+Product: None
+---
+Port: COM3
+Desc: USB Serial Port (COM3)
+HWID: USB VID:PID=0403:6015 SER=DO011NHWA
+Mfg: FTDI
+Product: None
+---
+Port: COM6
+Desc: Standard Serial over Bluetooth link (COM6)
+HWID: BTHENUM\{00001101-0000-1000-8000-00805F9B34FB}_VID&000105D6_PID&000A\7&8AD76E4&0&B02723E22BB5_C00000000
+Mfg: Microsoft
+Product: None
+---
+Port: COM8
+Desc: USB Serial Port (COM8)
+HWID: USB VID:PID=0403:6001 SER=AV0LPOIAA
+Mfg: FTDI
+Product: None
+---
+Port: COM9
+Desc: USB Serial Port (COM9)
+HWID: USB VID:PID=0403:6001 SER=AV0LOWTJA
+Mfg: FTDI
+Product: None
+---

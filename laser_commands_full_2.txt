@@ -1,0 +1,1072 @@
+Set Up and Installation
+59
+3.3.5 Connect the Control Box to the Laser
+1. Connect the 5-pin I/O cable of the Control Box cable to the CUBE Interface 
+Cable, as shown in Figure-3-7.  
+2. Confirm that the keyswitch on the Control Box is in the OFF position, as shown 
+in Figure-3-8.  
+3. Close the interlock with the supplied shorted RCA plug or connect the interlock 
+to a remote interlock switch.
+CAUTION!
+The interlock is a fused + 5 VDC signal line. Do not connect to a ground 
+circuit or the internal fuse may blow.
+Figure-3-9 shows where to connect the Interlock to the Control Box.  
+4. Apply power to the laser using the power supply rocker switch.
+5. Turn the Control Box keyswitch to the ON position to initiate laser emission.
+Figure 3-7.  Connect the Control Box
+Figure 3-8.  Control Box Keyswitch
+
+CUBE Laser System Operator’s Manual
+60
+NOTICE!
+The CUBE laser system is shipped in CW Manual mode with a 5-second 
+CDRH-required delay. The laser emission is active approximately five (5) 
+seconds after the keyswitch is set to the ON position.
+If computer control is not desired, the CUBE laser system starts without additional 
+hardware or configuration settings. If computer control is desired, see “Computer 
+Control” (p. 95).
+The CUBE laser system uses the following connections, shown in Figure-3-10, 
+plus a choice of Heat Sink.  
+Figure 3-9.  Control Box Interlock Connection
+Interlock shorting
+RCA plug
+Figure 3-10.  CUBE Laser System Set-Up
+
+Set Up and Installation
+61
+Table 3-2 lists the components shipped with a complete CUBE laser system:  
+Note that the Quatro Cable connects to an optional CUBE I/O Interface Cable, 
+with 8-Pin to Flying Leads (P/N 1103937), which is not included with the laser 
+system and must be ordered separately.
+See “Operations” (p. 67) for additional details about connections for Analog and 
+Digital Modulation.
+3.4 Connect Laser to Computer
+The CUBE laser system can control laser power or other parameters remotely 
+using CUBE Connection software installed on a host computer or laptop.
+• For details about installing and usin g the CUBE Connection software, see 
+“Coherent CUBE Connection Software” (p. 77). This section includes 
+installation instructions for the software, which is shipped with the CUBE laser 
+system. You can also download the software from the Coherent website at:
+https://www.coherent.com/lasers/laser/cube-lasers
+• For a list of computer controls and queries for both Continuous Wave (CW) and 
+Pulsed operations, also see “Computer Control” (p. 95). 
+All remote computer settings are stored each time the system is powered down. 
+Use the “?S” query to display a complete list of current settings.
+NOTICE!
+A null-modem cable will not operate the CUBE laser system. The CUBE is a 
+DCE device and requires a standard serial cable.
+Before communications can take place, you must set up a physical connection.
+For connection with Windows 10 and Windows 7 (64-bit) an RS-232 connection is 
+required. Coherent offers an optional High-Speed USB-to-Serial RS-232 Adapter 
+(P/N 1415602), shown in Figure-3-11.  
+Table 3-2.  Components of a CUBE Laser System
+# P/N COMPONENT
+1 Varies CUBE Laser Head
+2 1039966 CUBE Control Box
+3 1072454 CUBE Power Supply, 6 VDC, 2.5A, Switched
+4 1108063 Power Cord
+5 1072166 CUBE Interface Cable (Quatro Digital Interface from the 
+CUBE laser to the control box, I/O, RS-232, and power)
+1108906 USB Cable (see Figure-3-12)
+1147585 CUBE Quick Start Guide 
+1079890 CD-ROM with CUBE Operator’s Manual and Coherent 
+CUBE Connection Software
+CUBE Laser System Operator’s Manual
+62
+For connection with a 32-bit operating system, a USB connection can be used. 
+This USB cable, shown in Figure-3-12, is included with the CUBE Laser System. 
+Each of these connections are described in the sections that follow.
+3.4.1 RS-232 Connection
+To enable RS-232 communications between the CUBE laser and a 64-bit host 
+computer, a physical connection must be made to be able to utilizes the pin-outs 
+on the RS-232 connector.
+To do so, connect the serial interface cable to the optional CUBE High-Speed 
+USB-to-Serial RS-232 Adapter (P/N 1415602). This optional adapter, shown in 
+Figure-3-11, is available from Coherent and is sold separately.
+This Adapter allows connection of a serial RS-232 device (CUBE laser) to a host 
+computer with a USB Type-A port. A 3-foot detachable USB Type-A Male to USB 
+Type-B Male cable is included. This connector is compatible with operating 
+systems for Windows XP, Windows 7, and Windows 10.
+3.4.1.1 RS-232 Input Pins
+Table 3-3 and Table 3-4 list the input pins from the RS-232 connector to the 
+computer.
+You can connect directly to the CUBE DE-15 connector or the CUBE interface 
+cable DE-9 connector. Note the differences for a DE-9 interface cable or a DE-15 
+interface cable.
+ 
+Figure 3-11.  Connect Optional RS-232 Interface Cable
+Figure 3-12.  USB Cable
+
+Set Up and Installation
+63
+3.4.1.2 RS-232 Comm unication Settings
+Table 3-5 lists the settings for the RS-232 connector. 
+3.4.2 USB Connection
+Each CUBE laser system includes Coherent CUBE Connection software for USB 
+laser control in a graphical user interface (GUI) environment.
+IMPORTANT!
+A direct USB connection between the laser and a host computer is 
+compatible ONLY with older 32-bit operating systems. 
+A USB connection IS NOT valid for interfacing with Windows 7 (64-bit) or 
+Windows 10 operating systems.
+This can be resolved using the optional High-Speed USB-to-Serial RS-232 
+Adapter (P/N 1415602), described next. Using this adapter, all RS-232 
+commands and queries are available via a USB connection to the host computer.
+Table 3-3.  DE-9 INTERFACE CABLE CONNECTOR
+PIN NUMBER DESCRIPTION
+2 RS-232 Transmit
+3 RS-232 Receive
+5 Ground
+Table 3-4.  DE-15 LASER CONNECTOR
+PIN NUMBER DESCRIPTION
+4 RS-232 Transmit
+5 RS-232 Receive
+6 Ground
+Table 3-5.  RS-232 Communication Settings
+SETTING VALUE
+Baud 19200
+Parity None
+Data Bits 8
+Stop Bits 1
+Flow Control None
+CUBE Laser System Operator’s Manual
+64
+3.4.3 Factory Defaults
+Table 3-6 lists the factory default settings.  
+3.4.4 Connect the Laser for Remote Control
+Before you make a connection for remote control, set up the CUBE laser system 
+as follows This assumes you have already downloaded and installed software.
+1. Mount the CUBE laser on either the opt ional CUBE Heat Sink, the Right-Angle 
+Heat Sink Mount, or a mounting surface capable of providing adequate thermal 
+dissipation.
+2. Connect the Interface cable to the laser head.
+3. Connect the Control Box to the interface cable. Ensure the keyswitch is in the 
+OFF position.
+4. Connect the power supply.
+5. Select the appropriate cable for remote control:
+• If using an older host computer with 32-bit operating system, connect a 
+USB cable.
+• For 64-bit systems, connect an RS-232 cable to the computer shown in 
+Figure-3-13.  
+Table 3-6.  Factory Default Settings
+SETTING DESCRIPTION
+>=1 Command prompt on
+CDRH=1 5-second emission delay active
+DST=22 Diode set temperature is 22ºC
+E=1 Echo on
+P= <Nominal Laser Power> Output power set to nominal
+CW=1 CW laser emission
+ANA=0 External analog connector power control
+EXT=0 External power control off
+Figure 3-13.  Optional USB-to-Serial RS-232 Adapter
+
+Set Up and Installation
+65
+6. Install the Coherent CUBE Connection software.
+7. Turn power ON.
+8. Open the Coherent CUBE Connection pr ogram. The Home Screen launches.
+9. Turn the keyswitch on the control box to the ON position. Laser emission starts 
+in approximately 5 seconds.
+The laser starts in Continuous Wave (CW) mode at full power. 
+For Digital modulation, after remote communication is established, use the 
+“CW=0” command to set Pulse operation mode. When Pulse mode is active, the 
+laser modulation is controlled by the TTL input through the SMB connector.
+For more information about using commands to control the amplitude of the pulse 
+output, see “Computer Control” (p. 95).
+CUBE Laser System Operator’s Manual
+66
+67
+4O PERATIONS
+The CUBE Laser System operates in a variety of laser emission modes.
+• Continuous Wave (Manual mode | CW operations) 
+• Pulsed operation (Analog modulation)
+• Digital control (Digital modulation)
+• Mixed modulation (also referred to as  Pulsed Mode with Digital Control using 
+both Digital and Analog modulation) 
+Table 4-1 lists performance characteristics of the various modulation methods.  
+IMPORTANT!
+Refer to the CUBE Laser data sheet for specifications about each CUBE 
+laser, including maximum bandwidth, rise and fall times, and other details to 
+consider for your installation. 
+Table 4-1.  Control Input Performance Characteristics
+SYSTEM SPECIFICATIONS VALUE
+Digital Modulation
+Maximum Bandwidth
+Rise and Fall Time (10 to 90%)
+Modulation Depth at 0 Hz
+Modulation Depth at 150 MHz
+Input Impedance
+150 MHz a
+< 2 nsec b
+> 1,000,000:1 (106:1)
+> 250:1
+50 ohms
+a. For CUBE 445-40C and CUBE 488-50C: The Maximum Bandwidth for Digital 
+Modulation is 125 MHz.
+b. Only on CUBE 445: Fall Time < 3 nsec with 125 MHz maximum bandwidth. Actual 
+performance values are listed in the data sheet for a specific CUBE laser wavelength 
+and power.
+Analog Modulation
+Maximum Bandwidth
+Rise and Fall Time (10 to 90%)
+Modulation Depth
+Input Impedance
+350 KHz c
+< 1 µsec
+> 10,000:1
+2000 ohms
+c. For CUBE 375: The Maximum Bandwidth for Analog Modulation is 705 kHz.
+Laser Enable Control Input
+Maximum Bandwidth
+Rise and Fall Time (10 to 90%)
+Modulation Depth
+Input Impedance
+130 KHz
+<1 µsec
+Infinity, Complete On/Off
+7000 ohms
+Interlock Control Input
+Maximum Bandwidth
+Rise and Fall Time (10 to 90%)
+Modulation Depth
+Input Impedance
+7H z
+< 1 µsec
+Infinity, Complete On/Off
+7000 ohms
+CUBE Laser System Operator’s Manual
+68
+The CUBE Laser System controls the output power with an external DC voltage 
+source. The modulated output must be controlled with external analog or digital 
+signals. Modulation signals are connected to the back of the CUBE laser through 
+the SMB connector.
+NOTICE!
+The CUBE laser system is delivered in CW Power mode. Operating in other 
+modes requires USB or RS-232 remote control from a computer running 
+either Coherent CUBE Connection software or a terminal program. See 
+“Computer Control” (p. 95) for more information.
+The CUBE laser system includes complete remote communication and control via 
+RS-232 or USB connection. See “Computer Control” (p. 95) for more information.
+4.1 Before You Begin
+Normal operation assumes that the following initial configuration steps have been 
+taken, do the system is set up and ready to use:
+1. The CUBE laser system has been mounted to a proper Heat Sink and torque 
+specifications. Refer to “Set Up and Installation” (p. 53) for Heat Sink and 
+torque requirements.
+2. The interface cable has been connected to the laser, power supply, and 
+Control Box.
+3. The main power switch on the power su pply is in the OFF (“0”) position.
+4. The keyswitch on the Control Box is in the OFF position.
+5. The laser has been connected to the power supply.
+6. The power supply has been connected to electrical power.
+CAUTION!
+Optics or objects in front of the laser can reflect a part of the beam back into 
+the laser. This event—known as back reflection—can cause instability, noise, 
+or laser damage. For more information, see “Laser Back Reflection” (p. 16).
+4.2 Continuous Wave (CW) Operation
+CUBE lasers have a closed light loop circuit, internal to the laser, that operates 
+the laser in a Constant Power mode. This operating mode is called CW:Power.
+NOTICE!
+The CUBE laser system is shipped in CW Manual mode with a CDRH delay. 
+Laser emission occurs approximately five seconds after the keyswitch is set 
+to the ON position.
+Operations
+69
+A normal DC type voltage input provides direct CW power control. A typical 
+start-up sequence includes:
+1. Toggle the power switch for the laser to the ON position. The Status LED on the 
+laser flashes green at 2.5 Hz, which shows that the laser is in warm-up mode. 
+2. Wait until the Status LED on the la ser turns blue. The laser completes its 
+warm-up mode and goes into STANDBY mode.
+3. Turn the Control Box keyswitch to the ON position to initiate laser emission. 
+The Status LED on the laser turns white and remains white when the laser 
+emission is ON.
+4. After safe laser beam cont rol is ensured, move the laser shutter to the OPEN 
+position, as indicated on the laser top label. Take appropriate safety measures 
+to avoid exposure to direct or reflected laser radiation.
+The factory default system configuration—and the steps above—allow for 
+computer control without additional configuration settings.
+For information about remote control of the laser, including a list of computer 
+controls and queries, see “Computer Control” (p. 95).
+4.3 Analog Modulation (Pulsed) Control
+The CUBE laser system provides the capability to control the output power with 
+an external voltage source.
+CUBE lasers offer Analog modulation that allow the laser output power to track an 
+analog input voltage. Analog modulation can be used with a DC voltage source to 
+change the output power. Also sine wave, triangle wave or any arbitrary 
+waveform can be used to control the laser power by tracking the input voltage.
+The Control Box BNC connector controls laser power with an analog input 
+proportional to the laser output. Figure-4-1 shows the BNC connector for analog 
+modulation on the Control Box:  
+Figure 4-1.   Connection for Analog Modulation
+
+CUBE Laser System Operator’s Manual
+70
+For actual wavelength and power performance values, refer to the CUBE laser 
+data sheet for specifications. For example, the laser can be modulated at 
+150 MHz with a continuously changing amplitude up to 350 KHz. For actual 
+wavelength and power performance values, refer to the data sheet for your 
+specific laser.
+Figure-4-2 shows typical waveforms under Pulsed Operation (Analog 
+modulation). In this example, the analog signal is a 0 to 5V, 50 kHz, square wave. NOTICE:
+You must send the EXT=1 command through RS-232 or USB for the Analog 
+Power control to be active.
+Table 4-2 lists the input connections for Analog Modulation (BNC input on the 
+Control Box).  
+The Analog Control can change the output power at a maximum bandwidth. See 
+the data sheet for your specific laser for details about maximum bandwidth and 
+other specifications. The external analog input provides the capability to vary the 
+output power from minimum to 100%.
+The Analog modulation input voltage is controlled from 0 to 5 volts. At 0 volts, the 
+laser is at minimum output power. With 5 volts input, the laser is at 110% of its 
+rated output power, as shown in the graph in Figure-4-3.  
+Figure 4-2.  Waveforms for Pulsed Operation (Analog Modulation)
+Modulation signal
+from function generator
+Laser output power
+received by optical detector
+Table 4-2.  Analog Modulation Input Connections
+ANALOG MODULATION
+BNC CONNECTOR RANGE DESCRIPTION
++VDC 0 to 5V Analog Input (+) Maximum Bandwidth
+GND N/A Analog Input (–) Ground for Analog Input
+Operations
+71
+NOTICE:
+For Analog Power Control to be active, you must send the EXT=1 command 
+using host communications through Coherent CUBE Connection or a host 
+computer terminal program while connected through the RS-232 connection 
+using a RS-232 to USB adapter (sold separately).
+The CUBE laser system provides a complete set of input and output controls 
+through the DE-15 connector. For a complete list of connector functions, refer to 
+Table 2-3, “Interface Cable Pin-Outs,” on page 35.
+4.3.0.1 Constant Power (L ight Regulation) Mode
+The Constant Power mode uses a sample of the laser output power to control the 
+laser diode current and establish a light output power level by this feedback. The 
+computer sets the maximum laser output power by varying the reference voltage 
+to the light feedback error amplifier. Analog modulation operates the same way by 
+varying the reference voltage from the maximum set by the computer. See 
+Figure-4-4.  
+To access the analog modulation input, connect to the BNC on the front of the 
+Control Box.
+The Constant Power mode has the advantage of compensating for aging in the 
+diode by sampling the light output level directly and always driving the necessary 
+current through the laser diode to maintain the power level. Another advantage is 
+that light output verses modulation input voltage is forced to be linear and directly 
+proportional.
+Figure 4-3.  Analog Modulation: Power vs. Input Voltage
+0
+110
+100
+80
+60
+40
+20
+0 654321
+Input Voltage (V)
+Output Power (%)
+CUBE Laser System Operator’s Manual
+72
+4.3.0.2 Analog Modulation (Constant Current) Mode
+The Analog Modulation mode sets the laser diode drive to a constant current 
+value. The amount of current drive is adjusted to a level necessary to produce the 
+set output power level.
+The digital modulation input is used to turn the output power on and off, with ON 
+being a TTL high input. The computer sets the output power level to the proper 
+value at the time the mode is entered, or by the user issuing a “CAL” command.
+In this mode, the analog modulation operates to decrease the operating current 
+proportional the input voltage. The effect of this input voltage on the power output 
+is dependent upon the laser diode slope of current verses power. See Figure-4-5.
+The level at which the light output reaches a minimum is also dependent upon the 
+diode and will vary from diode to diode. To assure that a given maximum output 
+power is available, a “CAL=” command should be issued on a regular schedule to 
+compensate for laser diode aging.
+Figure 4-4.  Example: CUBE Analog Modulation in Constant Power (CW) Mode
+Analog input
+Laser output
+Figure 4-5.  Example: CUBE Analog Modulation in Pulse Mode
+Output Power (mW)
+Analog Modulation Input (volts)
+Operations
+73
+4.4 Digital Modulation
+For applications requiring a laser to turn ON and OFF in Digital mode, CUBE 
+lasers offer Digital modulation. CUBE lasers can be modulated in the Digital 
+mode from minimum power to the Set Power.
+Table 4-3 lists the Digital Modulation input connections:  
+For Digital Modulation, connect the external pulse source to the SMB connector 
+on the back panel of the CUBE laser, as shown in Figure-4-6. The laser SMB 
+connector has an input impedance of 50 ohm.  
+When operating in Digital Modulation mode at the Digital SMB input, the voltage 
+input signal needs a minimum 30 mA drive current capability into 50 ohms. 
+Computer I/O DAQ products frequently do not provide an output drive/source 
+current level that can drive a 50 ohm load.
+In such instances, use an additional line driver intended for use with I/O hardware 
+with TTL/CMOS outputs to provide the 50 ohm Digital Modulation drive current 
+requirement.
+Table 4-3.  Digital Modulation Input Connections
+DIGITAL MODULATION
+PIN NUMBER RANGE DESCRIPTION
+Center <0 . 8V TTL Low Signal = Laser Threshold Power
+>2 . 6V TTL High Signal = Nominal or Stored Laser Power
+Outside SMB Connector Ground
+Figure 4-6.   Connection for Digital Modulation
+
+CUBE Laser System Operator’s Manual
+74
+Typical Waveforms and rise/fall time under Digital modulation are shown in 
+Figure-4-7. 
+In the example shown, the digital signal is 1.1 to 3.3 Volts, 10 MHz, square wave 
+The TTL levels must be maintained for a minimum of 2.5 ns. The logic of the laser 
+head electronics is “active high,” which means that the TTL high level is equal to 
+laser ON.
+In such instances, use an additional line driver intended for use with I/O hardware 
+with TTL/CMOS outputs to provide the 50 ohm Digital Modulation drive current 
+requirement.
+1. Connect the laser as shown in “Set Up and Installation” (p. 53).
+2. Connect a signal generator cable (impedance Z = 50 Ω ) between the laser 
+head and the DC voltage source (maximum frequency depends on 
+specifications for each model of the CUBE laser).
+The Digital modulation voltage signal has to be TTL-level (V Low < 0.8 V and 
+V High > 2.6 V) with an impedance of 50 Ω .
+Use the “CAL” command to control the amplitude of the pulse output. Enter a 
+power <value> in mW, using the following command for example: 
+“CAL=<value>”.
+NOTICE!
+Based on differences between optical Rise Time and Fall Time—combined 
+with the associated delay difference between the digital input and optical 
+output—150 MHz modulation is not achievable with a 50-50 duty cycle. Refer 
+to the CUBE laser data sheet for specifications.
+3. Adjust the duty cycle as needed to achieve maximum optical pulse amplitude 
+at the desired modulation frequency.
+4.5 Mixed Modulation Mode
+The CUBE laser system has two operating modes: CW (constant power) and 
+Pulse (constant current). The Pulse mode offers advantages of both digital and 
+analog inputs. In many applications, these laser features can help replace 
+external modulation controls to save cost and space. The CUBE Laser System 
+can be modulated by both analog and digital signals at the same time.
+Figure 4-7.  Digital Modulation Timing Diagrams
+Modulation signal
+from function generator
+Laser output power
+received by optical detector
+Operations
+75
+The Laser can be operated with Mixed Modulation to vary the laser output power 
+with a analog signal and a digital signal to turn the laser ON and OFF. The 
+advantage of Mixed Modulation mode is to control the laser power separately 
+from switching the laser from ON to OFF.
+An example of mixed modulation is shown in Figure-4-8. In this example, the 
+analog signal is a 0 to 5 VDC, 1 kHz triangle wave and the digital signal is a 1.1. 
+to 3.3 Volts, 30 kHz, square wave. 
+When setting up the system to use Pulsed operations in Mixed modulation mode, 
+connect the external pulse source to the SMB input connector for Digital On/Off 
+operation as shown in Figure-4-9. This laser SMB connector provides digital TTL 
+input laser control.  
+NOTICE!
+The SMB input connector is a 50 Ω  input impedance. The digital input 
+requires a TTL high for laser on and TTL low for laser off, with a drive/source 
+current level > 30 mA.
+Figure 4-8.  Waveforms for Mixed Modulation
+Figure 4-9.  Digital Modulation (Pulsel) Connection
+Analog signal
+Digital signal
+Laser output
+
+CUBE Laser System Operator’s Manual
+76
+NOTICE:
+The Control Box BNC connector has an input impedance of 2.2 K ohm.
+The Control Box BNC connector can be used to control the amplitude of the 
+digital modulation output. For example, the analog input can be combined with 
+the digital input to control the amplitude of the high frequency modulation signal at 
+the 350 KHz rate. See the data sheet for specifications about each CUBE laser.
+4.5.0.1 Replacing External Modul ation System with the CUBE
+The equivalent of a Laser operating through an AOM can be achieved by using 
+the CUBE Laser in Pulse mode.
+The ON-OFF control line connects to the Digital modulation input (SMB 
+connector, 50 ohm input) and the output level control line connects to the Analog 
+modulation input (CUBE DE-15 connector). This arrangement allows the output 
+power level to be controlled by the Analog input voltage and be turned ON-OFF 
+by the Digital modulation input voltage (TTL High is ON). 
+The “CAL=” command sets the maximum output power when the Analog 
+modulation is at + 5 VDC and the Digital modulation is set to TTL high. The rise 
+and fall times for the Digital modulation input are less than 2 ns with a maximum 
+bandwidth of greater than 150 MHz. Refer to the CUBE Laser data sheet for 
+specifications for your laser.
+77
+5C OHERENT CUBE CONNECTION 
+SOFTWARE
+The Coherent CUBE Connection software provides simple graphical access to 
+the Coherent CUBE system.
+This software is shipped on a CD with the CUBE laser system. However, because 
+many of today’s host computers and laptops are no longer equipped with a CD 
+drive as standard equipment, you can also download the current software from 
+the Coherent website:
+https://www.coherent.com/lasers/laser/cube-lasers
+This software displays variable settings, and allows to you set binary functions 
+with the click of a mouse.  
+The CUBE Connection software generally operates intuitively. The limits of 
+adjustable parameters and operation of binary functions are described in the 
+section, “Computer Control” (p. 95)”.
+Th CUBE Connection software offers a terminal window to enter standard 
+RS-232 commands as text for program development purposes. CUBE RS-232 
+command protocol requires capital letters for each command or query.
+5.0.1 Software Installation
+This section describes how to set up and install the Coherent CUBE Connection 
+software and related drivers for the CUBE laser system. 
+To download the latest version of the Coherent CUBE Connection software:
+1. Go to the Coherent website and search for “CUBE”. 
+https://www.coherent.com/lasers/laser/cube-lasers
+2. On the product page, scroll to the bottom and select the icon for CUBE 
+Connection:
+3. Click the icon to either O pen or Save the ZIP file.
+Using this software, you can control laser power or other parameters directly 
+through an RS-232 connection or, for 32-bit operating systems, a USB 
+connection.
+The Coherent CUBE Connection software CD contains the software and USB 
+drivers necessary to operate the CUBE remotely via USB
+
+CUBE Laser System Operator’s Manual
+78
+To start the software installation process:
+1. Place the Coherent CUBE Connection  software CD into the computer CD 
+drive. The software installation process automatically starts. The installation 
+process automatically loads the necessary USB drivers.
+2. The installation dialog box shown in Figure-5-1 welcomes the user and 
+provides brief copyright information. Click “Next” to continue installation. 
+3. The installation dialog box shown in Figu re-5-2 displays the Software License 
+Agreement. Review the contents.  
+Figure 5-1.  Software Installation — Welcome Screen
+Figure 5-2.  Software Installation — Software License
+
+CUBE Connection Software
+79
+4. Scroll down to read all terms and condit ions, then click “I Agree” as shown in 
+Figure-5-3 to continue the installation.  
+5. The installation dialog box shown in Fi gure-5-4 displays the default location for 
+the Coherent CUBE Connection software installation. Click “Next” to continue 
+the installation or click “Browse” to select a different location in which to install 
+the software.  
+Figure 5-3.  Software Installation — Software License Agreement 
+Figure 5-4.  Software Installation — Directory for Installation
+
+CUBE Laser System Operator’s Manual
+80
+6. The installation dialog box shown in Figure-5-5 displays the program manager 
+designation for the Coherent CUBE Connection software. The text is displayed 
+when you click “Start” then “Programs” in Windows.  
+One selection you may want to install for ease of use is the Coherent icon, 
+listed in Figure-5-6.  
+Figure 5-5.  Software Installation — Select Icons to Display
+Figure 5-6.  Software Installation — Example of Icon Selected
+
+CUBE Connection Software
+81
+7. The installation dialog box shown in Figure-5-7 completes the settings 
+associated with the software installation. Click the “Back” button to change any 
+settings. Click the “Next” button to install the software in the selected location.  
+8. The installation dialog box shown in Figure-5-8 displays the progress of the 
+software installation.  
+Figure 5-7.  Software Installation — Settings Selected
+Figure 5-8.  Software Installation — Progress Bar
+
+CUBE Laser System Operator’s Manual
+82
+9. The installation dialog box shown in Figure-5-9 confirms the successful 
+installation of the Coherent CUBE Connection software.  
+10. Click the “OK” button shown in Figure-5-10 to restart the computer and register 
+the Coherent CUBE Connection files and USB drivers.  
+11. When the computer restart is complete, a Coherent CUBE Connection shortcut 
+icon is displayed on the computer desktop. Double-click on the icon to start the 
+Coherent CUBE Connection program.
+The Coherent CUBE Connection software installation is complete.
+The next sections describe the tool bar and the user interface for the Coherent 
+CUBE Connection software.
+Figure 5-9.  Software Installation — Software Installed Successfully
+Figure 5-10.  Software Installation — System Restart
+
+CUBE Connection Software
+83
+5.1 Coherent CUBE Connection Tool Bar
+The Coherent CUBE Connection Tool Bar provides quick access to the screens 
+and functions.
+ 
+• Menu access to the Open, Save, and Print functions is located in the File 
+menu. 
+• Menu access to Coherent CUBE Connecti on screens is located in the View 
+menu.
+5.1.1 Open Button
+The Open button displays a standard Windows Open dialog. The default file 
+type is .cfg, representing a Configuration file. The Configuration file is used to 
+store and recall all Coherent CUBE Connection settings.
+5.1.2 Save Button
+The Save button displays a standard Windows Save dialog. Enter a desired 
+file name and click “Save” to store all current Coherent CUBE Connection 
+settings to a .cfg file. Use the “Open” button to restore these settings later.
+5.1.3 Print Button
+The Print button provides the capability to print Configuration files or the 
+active Coherent CUBE Connection window. Select the type of print function and 
+then click “OK” to print on the selected printer.
+5.1.4 Home Button
+The Home button switches to the Home screen. Review the Home screen 
+for additional detail associated with screen functions.
+5.1.5 Settings Button
+The Settings button switches to the Settings screen. Review the Settings 
+screen for additional detail associated with screen functions.
+5.1.6 Information Button
+The Information button switches to the Information screen. Review the 
+Information screen for additional detail associated with screen functions.
+5.1.7 Terminal Button
+The Terminal button switches to the Terminal screen. Review the Terminal 
+screen for additional detail associated with screen functions.
+
+CUBE Laser System Operator’s Manual
+84
+5.1.8 System Status
+The System Status displays at the bottom of all Coherent 
+CUBE Connection screens. The status indicates normal operation or fault 
+condition. If a fault condition is indicated, check the Fault Screen for the specific 
+fault. If a fault has the capability to reduce laser diode life, laser emission is 
+interrupted until the fault is resolved.
+5.2 CUBE Connection User Interface
+This section describes the interface for the Coherent CUBE Connection software.
+5.2.1 Home Screen
+The Home screen shown in Figure-5-11 displays common information associated 
+with the laser operation. The Current gauge is displayed or hidden with a check 
+box on the Setting screen. Specific faults are displayed on the Fault screen.  
+5.2.2 Wavelength Icon
+The displayed icon color indicates the wavelength of the laser connected to the 
+Coherent CUBE Connection software. The values listed do not indicate the exact 
+laser wavelength. The specific diode wavelength is shown on the system serial 
+number label. 
+Figure 5-11.  CUBE Home Screen
+
+CUBE Connection Software
+85
+5.2.3 Hour Counter
+The Hour Counter screen displays the current hours of laser diode operation. The 
+counter increments when laser emission is active.  
+When the laser is in Standby, the counter does not increment. If the laser diode is 
+replaced, the hour counter represents the hours of the installed diode.
+5.2.4 Laser Emission Status
+The Laser Emission Status screen indicates the current state of laser output and 
+system status. The central indicator also shows Standby, CDRH Delay, and 
+System Faults. The ON and OFF buttons are used to toggle laser emission. 
+5.2.5 Laser Mode Status
+The Laser Mode Status indicators display the current output status for the CUBE.  
+NOTICE!
+If lower power CW is observed, ensure both the Pulse and Analog are 
+displayed in a disabled condition.
+• When the Pulse is active, the laser output  is controlled by an external digital 
+signal to the back panel SMB connection. 
+• When the Analog is active, the laser outp ut is controlled by an external voltage 
+source input to the Control Box BNC connector.
+NOTICE!
+When the Pulse is active, the laser runs at threshold power. A laser running 
+at threshold power can be interpreted as a CW laser problem. 
+Click the CW indicator to restore normal CW power levels. Laser modulation is 
+controlled by a TTL digital signal through the SMB connector.
+
+CUBE Laser System Operator’s Manual
+86
+5.2.6 Laser Output Indicator
+The laser output indicator is a relative display of laser output power. Coherent 
+recommends using one of the external laser power meters—listed in “Power 
+Meters and Sensors” (p. 115)—for precision measurement of laser output power. 
+Laser output power can be changed by using either of the following methods:
+• Entering a value and then clicking the Set button.
+• Dragging the slider and then clicking Set. 
+Add a relative laser current display by checking the Show combination 
+Power/Current gauge on the Home Screen box on the Settings screen. The 
+displayed current should be considered a relative value.
+The Green to Red transition indicates maximum laser power.
+5.2.7 Temperature Display
+The temperature display shows a combination of the current diode and base plate 
+temperature.  
+The diode temperature represents the measured diode temperature and not the 
+set temperature. Use the Settings screen to change the diode temperature. The 
+Red to Green transition represents maximum diode and base plate temperature.
+Double-click the Temperature gauge to display values in Fahrenheit. Double-click 
+again to return values to Celsius.
+
+CUBE Connection Software
+87
+Double-click the Power Gauge to display laser current. Double-click again to 
+return the display to power only. 
+5.2.8 Settings Screen
+The Settings screen is used to change various system and display parameters. 
+All settings displayed on the Settings screen are stored when the application is 
+closed. Laser-specific settings are stored in the laser when the laser is powered 
+down.  
+5.2.9 Settings
+The Settings section contains check boxes used to set Home screen display 
+options and the laser status when exiting Sleep mode. 
+Use the first check box to show or omit the current display, in combination with 
+the power display on the Home screen.
+
+CUBE Laser System Operator’s Manual
+88
+Use the second check box to set the units for the diode and base plate 
+temperature display on the Home screen. If the box is not checked, degrees 
+Celsius is displayed on the Home screen.
+If the third check box is checked, the previous laser emission status is restored 
+when the system exits Sleep mode. If the box is not checked, laser emission is 
+automatically restored when the system exits Sleep mode. 
+5.2.10 System Settings
+The System Settings section is used to control the CDRH delay and External 
+Analog power control status for the connected CUBE laser.  
+CDRH Five-Second Delay
+To maintain compliance with CDRH regulations, the system is shipped with the 
+CDRH delay active. The CDRH Five-Second Delay radio buttons are used to 
+toggle emission delay status.  
+• When the Enable button is selected, a five-second delay is applied each time 
+laser emission is interrupted. These interruptions include an open interlock and 
+fault conditions.
+• When the Disable button is selected, la ser emission are immediately restored.
+
+CUBE Connection Software
+89
+External Analog Power Control
+The External Analog Power Control radio button is used to set the state of power 
+control. 
+• When the External Analog Power Control is enabled, the laser output power is 
+directly controlled by the Analog signal input through the Control Box BNC 
+connector. 
+• When the External Analog Power Contro l is disabled, the laser output power 
+is controlled by the Coherent CUBE Connection software.
+5.2.11 Pulse Power Calibration
+The Pulse Power Calibration function sets the amplitude of the digital laser 
+pulses. This function is only available in Pulse mode.
+Secondary control of the pulse amplitude is available though a voltage input to 
+the Control Box BNC, with the External Analog Power Control active. 
+To change the amplitude of the digital laser pulses, enter a laser power value and 
+click Set Power.
+5.2.12 Information Screen
+The Information screen displays system information and current performance 
+parameters.
+
+CUBE Laser System Operator’s Manual
+90
+5.2.13 CUBE Laser Information
+The CUBE Laser information section contains static information associated with 
+the selected laser. The model name, serial number, part number, and nominal 
+wavelength are read from the selected laser EEPROM. The displayed 
+wavelength is a nominal value. The exact wavelength is shown on the system 
+serial number label.
+5.2.14 CUBE Laser Status
+The CUBE Laser Status section lists of operating parameters. The information 
+shown below represents a typical 405 nm system. 
+Table 5-1 lists the operating parameters.  
+Table 5-1.  Operating Parameters
+PARAMETER DESCRIPTION
+Operating Status Operating Status displays the Standby, Fault, or Ready condition of the system.
+Manual Mode Manual mode represents the Start-up mode for the selected system. When Manual mode is 
+active, laser emission is automatic, following diode temperature stabilization and CDRH delay 
+condition. When Manual mode is disabled, the Laser On button on the Home screen must be 
+clicked to initiate laser emission. Manual mode is controlled by the state of pin 3 on the DE-15 
+or pin 1 on the I/O connector. No connection to this pin defaults to Manual mode (Auto-start). 
+When this pin is pulled low, laser emission must be initiated with computer control.
+Nominal Power Nominal Power represents the normal laser output power. Refer to Max Light Ctrl Pwr, below, 
+for the maximum laser output power available.
+Min Light Ctrl Pwr Minimum Light Control Power represents the laser threshold output power. The value listed 
+corresponds to the laser output power when the system is running in Pulse mode without a 
+digital input to the SMB connector.
+CUBE Connection Software
+91
+5.2.15 Terminal Screen
+The Terminal screen is used to send individual commands or scripts to the CUBE 
+through an RS-232 connection to an RS-232 to USB Adapter (accessory sold 
+separately).
+Review the RS-232 commands and queries for a complete list of items available 
+through the Terminal screen. 
+The Clear Text button clears all information displayed in the Terminal window. 
+Max Light Ctrl Pwr Maximum Light Control Power represents the maximum power setting available.
+Diode Current Diode Current displays the relative laser diode current. This is an indirect measurement and is 
+not considered absolute. Use this parameter as a tool to observe changes in diode current.
+Diode Temp Diode Temperature is the measured diode temperature. This value is updated continuously.
+Base Plate Temp Base Plate Temperature is updated continuously. If the base plate temperature exceeds 50ºC, 
+the software protects the diode by interrupting laser emission. When the temperature returns 
+below 50ºC, laser emission is automatically restored.
+Interlock Status Interlock Status is updated continuously. When the Control Box key is in the On position, the 
+status displays as closed. If the key is switched to the Off position, the status displays as open.
+Hours The Hours Counter displays the current hours of laser diode operation. The counter increments 
+when laser emission is active. When the laser is in Standby, the counter does not increment. If 
+the laser diode is replaced, the hour counter represents the hours of the installed diode.
+Table 5-1.  Operating Parameters (continued)
+PARAMETER DESCRIPTION
+
+CUBE Laser System Operator’s Manual
+92
+5.2.16 Script File
+The Open button displays a standard Windows Open dialog. To load a Script file 
+into the Terminal window, select the desired file and click Open. Then click the 
+Start button to execute the displayed script. Checking the Loop Script box will 
+continually run the display script. 
+
+93
+6A DVANCED PROCEDURES
+This section describes the following advanced features of the CUBE laser 
+system:
+• Change the state of the CDRH-required delay
+• Set non-lasing conditions for intermittent use of the CUBE laser system
+6.1 CDRH Feature
+The Coherent CUBE is shipped as a CDRH-compliant laser system. The 
+CDRH-required delay of approximately five seconds occurs between a laser 
+ready condition and emission of laser light. This delay allows the user to take 
+appropriate safety precautions prior to laser emission. 
+After the system is running, the CDRH-required delay is not applied each time the 
+laser emission is remotely toggled on and off.
+The CDRH setting is stored in memory.
+6.1.1 Disable CDRH Procedure
+The ability to change the state of the CDRH-required delay requires remote 
+communication to the Coherent CUBE laser system via RS-232.
+WARNING!
+This operation defeats the safety controls required by the appropriate 
+regulatory agencies. With the use of these commands, the customer 
+assumes all responsibility for safety and proper compliance to CDRH 21 CFR 
+1040 and IEC60825-1.
+See “Computer Control” (p. 95) for commands to establish remote communication 
+with the CUBE laser system.
+• To defeat the CDRH-required de lay, use the “CDRH=0” command.
+The current CDRH-required delay state can be interrogated by the computer 
+with the “?CDRH” query.
+• To restore the CDRH-required de lay, use the “CDRH=1” command.
+CUBE Laser System Operator’s Manual
+94
+6.2 System Standby and Sleep Mode
+For users requiring intermittent use of the CUBE laser system, two levels of 
+non-lasing conditions are offered:
+• The “Standby” condition represents the Thermoelectric Cooler (TEC), 
+maintaining constant diode temperature with the laser diode off.
+• A “Sleep Mode” condition includes  a laser-OFF condition with no TEC 
+temperature control.
+Laser output can be immediately initiated in a “Standby” condition. When the 
+system is in Sleep mode, it requires a warm-up cycle (not to exceed five minutes) 
+prior to laser emission.
+• Standby Condition: L=0 T=1
+• Sleep Mode: L=0 T=0
+See “Computer Control” (p. 95)” for additional computer control information about 
+the “L” and “T” conditions.
+95
+7C OMPUTER CONTROL
+Almost any operation that can be performed or controlled using the keyboard with 
+the CUBE Connection software can be done using remote control commands.
+The CUBE laser system includes complete remote control capability through an 
+RS-232 serial interface (when using a 64-bit operating system) or a USB 
+connection (when using an older 32-bit operating system).
+Using the Remote feature generally requires both hardware and software (a 
+terminal program that supports the RS-232 protocol). For set-up instructions, see 
+“Connect the Laser for Remote Control” (p. 64) for details about setting up the 
+physical connection.
+7.1 Manual Control
+The CUBE is shipped in Manual mode. All of the RS-232 commands and queries 
+are still available in Manual mode. Defeating Manual mode allows exclusive 
+computer control, locking out the control cable and I/O cable controls. 
+NOTICE:
+To defeat the Manual mode, insert a jumper between pins 1 and 2 on the 
+interface cable I/O connector.
+All remote computer settings are stored each time the system is powered down. 
+Use the “?S” query to display a complete list of current settings.
+7.2 Continuous Wave (CW) Commands 
+and Queries
+The CUBE command prompt provides feedback associated with the current 
+system status and the command or query entered.
+Refer to the “?F” query in Table 7-1, “RS-232 CW Commands and Queries,” on 
+page 96 for a complete list of values returned with the command prompt.
+Syntax:
+Command=<value>
+A CUBE command is used to change a present setting. The syntax used for 
+CUBE commands is the command followed by an equal sign and a value. No 
+spaces are used between the command, equal sign, and the value.
+?Query
+A CUBE query is defined by a question mark (“?”) prior to the query. The 
+current state of CUBE commands can be displayed with a “?” prior to the 
+command. Use the “?S” query to display a complete list of current settings.
+CUBE Laser System Operator’s Manual
+96
+Use the “?S” query to display a list of current settings.
+?F - The ?F query
+Returns the fault status as a decimal value representing the sum of all current 
+faults. If there is no fault in the system, it returns a value of zero.
+?FF - The ?FF query
+Returns the fault status in a 16-bit binary format representing the sum of all 
+faults. The table below shows the decimal equivalent. If there is no fault in the 
+system, it returns a value of 0000 0000 0000 0000 or [0].
+?FL - The ?FL query
+Returns the fault status as text and lists all the current faults. If there is no fault 
+in the system, it returns the text message “System OK.”
+?H query
+Displays a list of the commands and the associated descriptions.
+Table 7-1 lists commands and queries for RS-232. See Table 7-4, “Fault Codes,” on 
+page 104 for fault codes.  
+Table 7-1.  RS-232 CW Commands and Queries
+COMMAND FUNCTION RANGE DESCRIPTION
+> ***Prompt 
+ON-OFF
+0, 1 Turns the command prompt on or off.
+This setting is stored into memory so that it remains the 
+same even after a power on/off cycle.
+CDRH ***5 Sec. Delay 
+ON-OFF
+0, 1 Toggles the CDRH five-second emission delay on and off.
+?BT *Base Plate 
+Temp
+0 to 55 Returns (in degrees Celsius) the present base plate 
+temperature. The hardware resolution for this measurement 
+is 0.06ºC.
+?C *Laser Diode 
+Current
+0 to 255 Returns (in milliamps) the present operating current of the 
+laser diode. The hardware resolution for this measurement 
+is 0.1 mA.
+CLS **Clear Screen N/A Clears text from a serial communication screen.
+?DST Diode Set 
+Temp.
+15 to 35 Returns (in degrees Celsius) the present set temperature of 
+the laser diode. The hardware resolution for this 
+measurement is 0.029ºC.
+?DT *Diode Present 
+Temp.
+15 to 35 Returns (in degrees Celsius) the present measured 
+temperature of the laser diode.
+E **Echo ON-OFF N/A Sets or reads the Echo Off feature. This feature turns 
+character echo on or off on a serial communication terminal 
+and is useful if a computer script/program—rather than a 
+person—is controlling the laser.
+?F *Fault Number Returns the present system status as a decimal value 
+corresponding to the binary system status. Review the ?F 
+table for a complete list of error conditions.
+?FF *Fault Binary 
+Code
+Checks for faults in the system and returns a two-byte result. 
+No system fault returns 0000 0000 0000 0000—see 
+Table 7-4, “Fault Codes,” on page 104.
+Computer Control
+97
+?FL *Fault List Checks for faults in the system and returns an ASCII result. 
+No system fault returns “System OK”—see Table 7-4, “Fault 
+Codes,” on page 104.
+?HH *Usage Hours 
+Head
+0 to 100000 Returns the present head hours with a resolution of one 
+second. The head hours are tracked in one-minute intervals 
+when the system is powered down and restored.
+?HID *Head ID Value N/A Returns (as a comma-delimited string) the head serial 
+number, head type, and nominal wavelength.
+L ***Laser 
+ON-OFF
+0, 1 Sets the laser status. Setting L=1 enables the laser On. TEC 
+servo MUST be ON (T=1) to set L=1. Setting L=0 turns off 
+the laser output.
+?LT Laser Type N/A When OP=2 operating mode is active, this query returns 
+Sapphire laser types. Review the Sapphire manual for 
+additional information.
+OP ***Operating 
+Protocol
+1,2,3 Determines the response format for commands and queries. 
+OP=1 returns data in the format described in the CUBE 
+manual. OP=2 returns data to match responses from 
+Coherent Sapphire lasers. OP=3 returns data to match 
+responses from Coherent Compass 405 lasers. Review 
+Coherent Sapphire and Compass 405 manuals for detailed 
+response information.
+P ***Laser power 0, MAXLP Sets (in mW) the laser power. The range of P values is 
+based on the minimum laser threshold power (?MINLP) and 
+the maximum laser power (?MAXLP).
+?PSH Power Hours 0/100000 Returns the present Laser Hours.
+?PST Computer 
+Temperature
+N/A Returns the present computer temperature in OP=2 
+operating mode.
+?SP *Set Power Out 0,MAXLP Returns (in mW) the present laser power setting. This value 
+represents the last value entered with the P command.
+?SS TEC 0,1 Returns TE status 1=ON, 0=OFF.
+?SV
+?SVH
+*Software 
+Version
+N/A Reads the CUBE firmware version.
+?STA *Operating 
+Status #
+N/A Returns an integer value representing the present CUBE 
+system operating status.
+1: Warm Up
+2: Standby
+3: Laser ON
+4: Error
+5: System Halted (Fatal Error)
+?M *Manual Mode 0,1 Returns the status of the Manual mode control DE-15 pin 3. 
+The Manual mode pin normally floats high with no 
+connection. When this pin is tied to ground, all laser 
+operations require computer control.
+?MINLP *Min. Light 
+Cont. Pwr.
+N/A Returns (in mW) the minimum power available in CW light 
+control mode.
+?MAXLP *Max. Light 
+Cont. Pwr.
+N/A Returns (in mW) the maximum laser power available in CW 
+light control mode.
+Table 7-1.  RS-232 CW Commands and Queries (continued)
+COMMAND FUNCTION RANGE DESCRIPTION
+CUBE Laser System Operator’s Manual
+98
+7.3 Pulsed Commands and Queries
+The CUBE command prompt provides feedback associated with the current 
+system status and the command or query entered.
+Syntax:
+Command=<value>
+A CUBE command is used to change a present setting. The syntax used for 
+CUBE commands is the command followed by an equal sign and a value. No 
+spaces are used between the command, equal sign, and the value. For 
+example, use the “CAL” command to control the amplitude of the pulse output. 
+Enter a power <value> in mW, using the following syntax: “CAL=<value>”.
+?NOMP *Nominal Laser 
+Pwr.
+N/A Returns (in mW) the nominal CW laser output power.
+?WAVE *Laser 
+Wavelength
+N/A Returns the laser operating wavelength, based on a diode 
+temperature of 25 degrees Celsius.
+?INT,
+?LCK
+?K
+*Interlock 
+Status
+0,1 The ?INT or ?LCK query returns the status of the interlock 
+DE-15 pin 1 status. A value of 1 corresponds to a closed 
+status and a value of 0 corresponds to an open status.
+?PVPS *Protocol 
+Version
+N/A Reads the software protocol version. If the CUBE firmware 
+is embedded into a process, this query can be used to check 
+for changes in command structure. If the firmware version 
+changes without changes to the command structure, the this 
+query returns the same value for separate firmware 
+versions.
+T ***Turns TE ON 0,1 Reads or sets the TEC status. Setting T=1 enables the 
+temperature control of the laser diode. Setting T=0 disables 
+the temperature control.
+CW ***CW or Pulse 
+Mode
+0,1 Switches the operating mode from CW (CW=1) to Pulse 
+(CW=0). If Pulse mode is set, the laser runs at the threshold 
+power if no voltage is present at the digital pulse input 
+connector.
+ANA ***Analog 
+Control Mode
+0,1 Switches the Laser Diode parameter controlled by the 
+external analog signal from current (ANA=1) to power 
+(ANA= 0). In CW mode, the CUBE is always in 
+light-regulation, so the ANA value will remain zero (0).
+EXT ***Ext. Analog 
+Laser Pwr. 
+Control
+0,1 Commands either the power or current to be set by the 
+external analog modulation input. Querying this command 
+returns the command status: EXT=1 for external or EXT=0 
+for internal. The external connector is located at laser pin 8 
+on the DE-15 connector.
+Table 7-1.  RS-232 CW Commands and Queries (continued)
+COMMAND FUNCTION RANGE DESCRIPTION
