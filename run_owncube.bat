@@ -1,7 +1,5 @@
 @echo off
 setlocal
-:: SP5-CUBE MitM Gateway Launcher
-:: Repairs a stale virtual environment if needed, ensures dependencies exist, then starts the app.
 
 set "PROJECT_ROOT=%~dp0"
 set "PYTHONPATH=%PROJECT_ROOT%"
@@ -24,7 +22,6 @@ if not exist "%VENV_PYTHON%" (
     if errorlevel 1 (
         echo.
         echo [ERROR] Failed to create the virtual environment.
-        echo Make sure Python 3 is installed and the Windows `py` launcher is available.
         pause
         exit /b 1
     )
@@ -42,8 +39,8 @@ if errorlevel 1 (
     )
 )
 
-echo Starting SP5-CUBE MitM Gateway...
-"%VENV_PYTHON%" "%PROJECT_ROOT%src\main.py"
+echo Starting ownCUBE...
+"%VENV_PYTHON%" "%PROJECT_ROOT%src\owncube_main.py"
 set "APP_EXIT=%ERRORLEVEL%"
 
 if %APP_EXIT% neq 0 (
